@@ -1,110 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-  <p class="w3-xlarge">Template by w3.css</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+{% load static %}
+<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<header class="header-banner" id="iin1">
+    <div class="container-width" id="ifju">
+      <div class="logo-container" id="io2t">
+        <div class="logo">GrapesJS
+        </div>
+      </div>
+      <nav class="menu">
+        <div class="menu-item">BUILDER
+        </div>
+        <div class="menu-item">TEMPLATE
+        </div>
+        <div class="menu-item">WEB
+        </div>
+      </nav>
+      <div class="clearfix">
+      </div>
+      <div class="lead-title">Build your templates without coding
+      </div>
+      <div class="sub-lead-title">All text blocks could be edited easily with double clicking on it. You can create new text blocks with the command from the left panel
+      </div>
+      <div class="lead-btn">Hover me
+      </div>
     </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+  </header>
+  <section class="flex-sect">
+    <div class="container-width">
+      <div class="flex-title" id="iqau8">Flex is the new black
+      </div>
+      <div class="flex-desc">With flexbox system you're able to build complex layouts easily and with free responsivity
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title one
+            </div>
+            <div class="card-sub-title">Subtitle one
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch2">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title two
+            </div>
+            <div class="card-sub-title">Subtitle two
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch3">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title three
+            </div>
+            <div class="card-sub-title">Subtitle three
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch4">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title four
+            </div>
+            <div class="card-sub-title">Subtitle four
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch5">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title five
+            </div>
+            <div class="card-sub-title">Subtitle five
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch6">
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title six
+            </div>
+            <div class="card-sub-title">Subtitle six
+            </div>
+            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+  </section>
+  <section class="am-sect">
+    <div class="container-width">
+      <div class="am-container">
+        <img onmousedown="return false" src="./img/phone-app.png" class="img-phone"/>
+        <div class="am-content">
+          <div class="am-pre">ASSET MANAGER
+          </div>
+          <div class="am-title">Manage your images with Asset Manager
+          </div>
+          <div class="am-desc">You can create image blocks with the command from the left panel and edit them with double click
+          </div>
+          <div class="am-post">Image uploading is not allowed in this demo
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </section>
+  <section class="blk-sect">
+    <div class="container-width">
+      <div class="blk-title">Blocks
+      </div>
+      <div class="blk-desc">Each element in HTML page could be seen as a block. On the left panel you could find different kind of blocks that you can create, move and style
+      </div>
+      <div class="price-cards">
+        <div class="price-card-cont">
+          <div class="price-card">
+            <div class="pc-title">Starter
+            </div>
+            <div class="pc-desc">Some random list
+            </div>
+            <div class="pc-feature odd-feat">+ Starter feature 1
+            </div>
+            <div class="pc-feature">+ Starter feature 2
+            </div>
+            <div class="pc-feature odd-feat">+ Starter feature 3
+            </div>
+            <div class="pc-feature">+ Starter feature 4
+            </div>
+            <div class="pc-amount odd-feat">$ 9,90/mo
+            </div>
+          </div>
+        </div>
+        <div class="price-card-cont">
+          <div class="price-card pc-regular">
+            <div class="pc-title">Regular
+            </div>
+            <div class="pc-desc">Some random list
+            </div>
+            <div class="pc-feature odd-feat">+ Regular feature 1
+            </div>
+            <div class="pc-feature">+ Regular feature 2
+            </div>
+            <div class="pc-feature odd-feat">+ Regular feature 3
+            </div>
+            <div class="pc-feature">+ Regular feature 4
+            </div>
+            <div class="pc-amount odd-feat">$ 19,90/mo
+            </div>
+          </div>
+        </div>
+        <div class="price-card-cont">
+          <div class="price-card pc-enterprise">
+            <div class="pc-title">Enterprise
+            </div>
+            <div class="pc-desc">Some random list
+            </div>
+            <div class="pc-feature odd-feat">+ Enterprise feature 1
+            </div>
+            <div class="pc-feature">+ Enterprise feature 2
+            </div>
+            <div class="pc-feature odd-feat">+ Enterprise feature 3
+            </div>
+            <div class="pc-feature">+ Enterprise feature 4
+            </div>
+            <div class="pc-amount odd-feat">$ 29,90/mo
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
-</body>
-</html>
+  </section>
+  <section class="bdg-sect">
+    <div class="container-width">
+      <h1 class="bdg-title">The team
+      </h1>
+      <div class="badges">
+        <div class="badge">
+          <div class="badge-header">
+          </div>
+          <img src="img/team1.jpg" class="badge-avatar"/>
+          <div class="badge-body">
+            <div class="badge-name">Adam Smith
+            </div>
+            <div class="badge-role">CEO
+            </div>
+            <div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+            </div>
+          </div>
+          <div class="badge-foot">
+            <span class="badge-link">f</span>
+            <span class="badge-link">t</span>
+            <span class="badge-link">ln</span>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-header">
+          </div>
+          <img src="img/team2.jpg" class="badge-avatar"/>
+          <div class="badge-body">
+            <div class="badge-name">John Black
+            </div>
+            <div class="badge-role">Software Engineer
+            </div>
+            <div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+            </div>
+          </div>
+          <div class="badge-foot">
+            <span class="badge-link">f</span>
+            <span class="badge-link">t</span>
+            <span class="badge-link">ln</span>
+          </div>
+        </div>
+        <div class="badge">
+          <div class="badge-header">
+          </div>
+          <img src="img/team3.jpg" class="badge-avatar"/>
+          <div class="badge-body">
+            <div class="badge-name">Jessica White
+            </div>
+            <div class="badge-role">Web Designer
+            </div>
+            <div class="badge-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+            </div>
+          </div>
+          <div class="badge-foot">
+            <span class="badge-link">f</span>
+            <span class="badge-link">t</span>
+            <span class="badge-link">ln</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-under">
+    <div class="container-width">
+      <div class="footer-container">
+        <div class="foot-lists">
+          <div class="foot-list">
+            <div class="foot-list-title">About us
+            </div>
+            <div class="foot-list-item">Contact
+            </div>
+            <div class="foot-list-item">Events
+            </div>
+            <div class="foot-list-item">Company
+            </div>
+            <div class="foot-list-item">Jobs
+            </div>
+            <div class="foot-list-item">Blog
+            </div>
+          </div>
+          <div class="foot-list">
+            <div class="foot-list-title">Services
+            </div>
+            <div class="foot-list-item">Education
+            </div>
+            <div class="foot-list-item">Partner
+            </div>
+            <div class="foot-list-item">Community
+            </div>
+            <div class="foot-list-item">Forum
+            </div>
+            <div class="foot-list-item">Download
+            </div>
+            <div class="foot-list-item">Upgrade
+            </div>
+          </div>
+          <div class="clearfix">
+          </div>
+        </div>
+        <div class="form-sub">
+          <div class="foot-form-cont">
+            <div class="foot-form-title">Subscribe
+            </div>
+            <div class="foot-form-desc">Subscribe to our newsletter to receive exclusive offers and the latest news
+            </div>
+            <input name="name" placeholder="Name" class="sub-input"/>
+            <input name="email" placeholder="Email" class="sub-input"/>
+            <button type="button" class="sub-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container-width">
+        <div class="made-with">
+          made with GrapesJS
+        </div>
+        <div class="foot-social-btns">facebook twitter linkedin mail
+        </div>
+        <div class="clearfix">
+        </div>
+      </div>
+    </div>
+  </footer>
