@@ -3,24 +3,29 @@
 <header class="header-banner" id="iin1">
     <div class="container-width" id="ifju">
       <div class="logo-container" id="io2t">
-        <div class="logo">GrapesJS
+        <div class="logo"> Anova Consulting
         </div>
       </div>
       <nav class="menu">
-        <div class="menu-item">BUILDER
+        <div class="menu-item">AWARENESS GAME
         </div>
-        <div class="menu-item">TEMPLATE
+        <div class="menu-item">BLOG
         </div>
-        <div class="menu-item">WEB
+        <div class="menu-item">ABOUT US
         </div>
       </nav>
       <div class="clearfix">
       </div>
-      <div class="lead-title">Build your templates without coding
+      <div class="lead-title">INFS3605 HOME PAGE
       </div>
-      <div class="sub-lead-title">All text blocks could be edited easily with double clicking on it. You can create new text blocks with the command from the left panel
+      <div class="sub-lead-title">{% if user.is_authenticated %}
+        Hi {{ user.username }}!
+      {% else %}
+        <p>You are not logged in</p>
+        <a href="{% url 'login' %}">login</a>
+      {% endif %}
       </div>
-      <div class="lead-btn">Hover me
+      <div class="lead-btn">INTERACTIVE GAME
       </div>
     </div>
   </header>
