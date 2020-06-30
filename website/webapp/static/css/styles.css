@@ -7,6 +7,7 @@
   .clearfix{
     clear:both;
   }
+
   .header-banner{
     padding-top:35px;
     padding-bottom:100px;
@@ -62,6 +63,7 @@
     max-width:650px;
     line-height:30px;
     margin-bottom:30px;
+    font-size: 40px;
     color:#c6c6c6;
   }
   .lead-btn{
