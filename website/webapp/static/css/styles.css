@@ -14,11 +14,11 @@
     color:#ffffff;
     font-family:Helvetica, serif;
     font-weight:100;
-    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
+    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
     background-attachment:scroll, scroll;
     background-position:left top, center center;
     background-repeat:repeat-y, no-repeat;
-    background-size:contain, cover;
+    background-size: cover;
   }
   .container-width{
     width:90%;
@@ -415,9 +415,10 @@
   }
   .badge-header{
     height:115px;
-    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
+    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
     background-position:left top, center center;
-    background-attachment:scroll, fixed;
+    background-attachment:scroll;
+    background-size: 290px 115px;
     overflow:hidden;
   }
   .badge-name{
