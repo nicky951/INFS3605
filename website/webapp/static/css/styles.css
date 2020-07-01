@@ -81,12 +81,12 @@
     cursor:pointer;
   }
   .lead-btn:hover{
-    background-color:#ffffff;
+    background-color:#fff;
     color:#4c114e;
   }
   .lead-btn:active{
     background-color:#4d114f;
-    color:#fff;
+    color:#d983a6;
   }
   .flex-sect{
     background-color:#fafafa;
