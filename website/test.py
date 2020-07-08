@@ -18,4 +18,3 @@ for doc in documents:
         
     )
 print(json.dumps(cleansed_document_list, indent=4, sort_keys=True))
-# print(cyberdata)
