@@ -6,19 +6,19 @@
   }
   .clearfix{
     clear:both;
+    background-color: transparent;
   }
-
   .header-banner{
     padding-top:35px;
     padding-bottom:100px;
     color:#ffffff;
     font-family:Helvetica, serif;
     font-weight:100;
-    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
+    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
     background-attachment:scroll, scroll;
     background-position:left top, center center;
     background-repeat:repeat-y, no-repeat;
-    background-size: cover;
+    background-size:contain, cover;
   }
   .container-width{
     width:90%;
@@ -63,7 +63,6 @@
     max-width:650px;
     line-height:30px;
     margin-bottom:30px;
-    font-size: 40px;
     color:#c6c6c6;
   }
   .lead-btn{
@@ -75,18 +74,19 @@
     text-align:center;
     letter-spacing:3px;
     line-height:30px;
-    background-color:#d983a6;
+    background-color:#ffffff;
     border-radius:5px;
     transition:all 0.5s ease;
     cursor:pointer;
+    color:#ffffff;
   }
   .lead-btn:hover{
-    background-color:#fff;
-    color:#4c114e;
+    background-color:#ffffff;
+    color:#ffffff;
   }
   .lead-btn:active{
-    background-color:#ffffff;
-    color:#4c114e;
+    background-color:#501F3A;
+    color:#fff;
   }
   .flex-sect{
     background-color:#fafafa;
@@ -115,8 +115,8 @@
     flex-flow:wrap;
   }
   .card{
-    background-color: #FFFFFF;
-    height:400px;
+    background-color:white;
+    height:300px;
     width:300px;
     margin-bottom:30px;
     box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -155,12 +155,16 @@
     color:#555;
   }
   .card-title{
-    font-size:1rem;
+    font-size:1.4em;
     margin-bottom:5px;
   }
-  .card-desc{
+  .card-sub-title{
     color:#b3b3b3;
-    font-size:0.8em;
+    font-size:1em;
+    margin-bottom:15px;
+  }
+  .card-desc{
+    font-size:0.85rem;
     line-height:17px;
   }
   .am-sect{
@@ -380,16 +384,16 @@
     background-color:#573f5c;
   }
   .bdg-sect{
-    padding-top:50px;
+    padding-top:100px;
     padding-bottom:100px;
     font-family:Helvetica, serif;
-    background-color:#222222;
+    background-color:#fafafa;
   }
   .bdg-title{
     text-align:center;
     font-size:2em;
     margin-bottom:55px;
-    color:#ffffff;
+    color:#555555;
   }
   .badges{
     padding:20px;
@@ -411,10 +415,9 @@
   }
   .badge-header{
     height:115px;
-    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
+    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
     background-position:left top, center center;
-    background-attachment:scroll;
-    background-size: 290px 115px;
+    background-attachment:scroll, fixed;
     overflow:hidden;
   }
   .badge-name{
@@ -460,6 +463,95 @@
     display:block;
     border-radius:100%;
     margin:0 10px;
+  }
+  #i9x7{
+    background-image:linear-gradient(#501F3A,#501F3A);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    color:#cccccc;
+    font-size:15px;
+  }
+  #idya{
+    background-color: transparent;
+    background-repeat:repeat, repeat;
+    background-position:left top, left top;
+    background-attachment:scroll, scroll;
+    background-size:auto, auto;
+    max-width:900px;
+    width:800px;
+    height:550px;
+  }
+  #iq06{
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://www.ge.com/research/sites/default/files/styles/hero_banner/public/images/capabilities/2018-11/technology-domain-cyber-security-hero.jpg?itok=xlm5aFit');
+  }
+  #i84nk{
+    text-align:center;
+    color:#cccccc;
+    background-image:none;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #i9w4q{
+    background-image:none;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    margin:0 200px 30px 200px;
+    max-width:400px;
+    color:#CCCCCC;
+  }
+  #iiwik{
+    margin:15px 320px 0 400px;
+    border:solid #eee9ee;
+    background-image:linear-gradient(#501F3A,#501F3A);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    height:50px;
+    width:150px;
+    float:right;
+  }
+  #iuqs{
+    box-shadow:0 0 5px 0 #501F3A;
+    background-image:linear-gradient(#501F3A,#501F3A);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #iifk{
+    box-shadow:0 0 5px 0 #501F3A;
+    background-image:linear-gradient(#501F3A,#501F3A), none;
+    background-repeat:repeat, repeat;
+    background-position:left top, left top;
+    background-attachment:scroll, scroll;
+    background-size:auto, auto;
+  }
+  #ifkr{
+    box-shadow:0 0 5px 0 #501F3A;
+    background-image:linear-gradient(#501F3A,#501F3A);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #iv42g7{
+    background-image:none;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    margin:0 200px 30px 200px;
+    max-width:400px;
+    color:#CCCCCC;
   }
   @media (max-width: 768px){
     .foot-form-cont{

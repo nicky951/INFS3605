@@ -1,10 +1,28 @@
 <!-- templates/registration/login.html -->
 
-{% block content %}
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
-{% endblock %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href= "{% static 'css/login.css' %}">
+
+<header id="iq06" class="header-banner">
+  <div id="idya" class="container-width">
+    <div class="logo-container">
+      <div id="i9x7" class="logo">Anova Consulting
+      </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <body style="text-align: center;">
+    {% block content %}
+    <div id="i84nk" class="lead-title">Login
+    </div>
+      <form method="post" style="margin: 0 auto;">
+      {% csrf_token %}
+      {{ form.as_p }}
+        <button type="submit" class="lead-btn" id="iiwik">Login</button>
+    </form>
+    {% endblock %}
+  </body>
+  </div>
+</header>
+
+

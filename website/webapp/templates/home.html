@@ -18,18 +18,15 @@
       </div>
       <div class="lead-title">INFS3605 HOME PAGE
       </div>
-      
-      <!--Need to fix up styling on this-->
       <div class="sub-lead-title" style="color: #FFFFFF;"> {% if user.is_authenticated %}
         Hi {{ user.username }}!
         <div class="lead-btn">INTERACTIVE GAME
         </div>
       {% else %}
         <p>You are not logged in</p>
-        <div class="lead-btn"> <a href="{% url 'login' %}" style="color: #FFFFFF; text-decoration:none;"> Login </a></div>
+        <div class="lead-btn" onclick= "location.href='/accounts/login'">Login</div>
       {% endif %}
       </div>
-      <!---->
     </div>
   </header>
   <section class="flex-sect">
@@ -39,7 +36,7 @@
       <div class="flex-desc">Your latest Cyber Security updates powered by the New York Times
       </div>
       <div class="cards">
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.0.web_url}}'">
           <div class="card-header" style="background-image: url({{cleansed_document_list.0.image}});"> 
           </div>
           <div class="card-body"> 
@@ -50,7 +47,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.1.web_url}}'">
           <div class="card-header ch2" style="background-image: url({{cleansed_document_list.1.image}});">
           </div>
           <div class="card-body">
@@ -61,7 +58,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.2.web_url}}'">
           <div class="card-header ch3" style="background-image: url({{cleansed_document_list.2.image}});">
           </div>
           <div class="card-body">
@@ -72,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.3.web_url}}'">
           <div class="card-header ch4" style="background-image: url({{cleansed_document_list.3.image}});">
           </div>
           <div class="card-body">
@@ -83,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.4.web_url}}'">
           <div class="card-header ch5" style="background-image: url({{cleansed_document_list.4.image}});">
           </div>
           <div class="card-body">
@@ -94,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
+        <div class="card" onclick="location.href='{{cleansed_document_list.5.web_url}}'">
           <div class="card-header ch6" style="background-image: url({{cleansed_document_list.5.image}});">
           </div>
           <div class="card-body">
