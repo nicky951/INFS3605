@@ -29,6 +29,7 @@
         <div class="lead-btn"> <a href="{% url 'login' %}" style="color: #FFFFFF; text-decoration:none;"> Login </a></div>
       {% endif %}
       </div>
+      <!---->
     </div>
   </header>
   <section class="flex-sect">
@@ -39,74 +40,68 @@
       </div>
       <div class="cards">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header" style="background-image: url({{cleansed_document_list.0.image}});"> 
           </div>
-          <div class="card-body">
-            <div class="card-title">Title one
+          <div class="card-body"> 
+            <div class="card-title">{{ cleansed_document_list.0.main }}
             </div>
-            <div class="card-sub-title">Subtitle one
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header ch2">
-          </div>
-          <div class="card-body">
-            <div class="card-title">Title two
-            </div>
-            <div class="card-sub-title">Subtitle two
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.0.abstract }}
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="card-header ch3">
+          <div class="card-header ch2" style="background-image: url({{cleansed_document_list.1.image}});">
           </div>
           <div class="card-body">
-            <div class="card-title">Title three
+            <div class="card-title">{{ cleansed_document_list.1.main }}
             </div>
-            <div class="card-sub-title">Subtitle three
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.1.abstract }}
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="card-header ch4">
+          <div class="card-header ch3" style="background-image: url({{cleansed_document_list.2.image}});">
           </div>
           <div class="card-body">
-            <div class="card-title">Title four
+            <div class="card-title">{{ cleansed_document_list.2.main }}
             </div>
-            <div class="card-sub-title">Subtitle four
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.2.abstract }}
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="card-header ch5">
+          <div class="card-header ch4" style="background-image: url({{cleansed_document_list.3.image}});">
           </div>
           <div class="card-body">
-            <div class="card-title">Title five
+            <div class="card-title">{{ cleansed_document_list.3.main }}
             </div>
-            <div class="card-sub-title">Subtitle five
-            </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.3.abstract }}
             </div>
           </div>
         </div>
         <div class="card">
-          <div class="card-header ch6">
+          <div class="card-header ch5" style="background-image: url({{cleansed_document_list.4.image}});">
           </div>
           <div class="card-body">
-            <div class="card-title">Title six
+            <div class="card-title">{{ cleansed_document_list.4.main }}
             </div>
-            <div class="card-sub-title">Subtitle six
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.4.abstract }}
             </div>
-            <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header ch6" style="background-image: url({{cleansed_document_list.5.image}});">
+          </div>
+          <div class="card-body">
+            <div class="card-title">{{ cleansed_document_list.5.main }}
+            </div>
+            <br>
+            <div class="card-desc">{{ cleansed_document_list.5.abstract }}
             </div>
           </div>
         </div>
