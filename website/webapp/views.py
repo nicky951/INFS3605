@@ -8,6 +8,8 @@ import json
 # UG6f30PnzgFUgFKQ1lu1H1HvGMS0GOta
 # https://api.nytimes.com/svc/search/v2/articlesearch.json?q=computer%20security&page=0&api-key=UG6f30PnzgFUgFKQ1lu1H1HvGMS0GOta
 
+
+#Haveibeenpwned https://haveibeenpwned.com/unifiedsearch/nicholasliang325%40gmail.com
 def home(request):
     template = loader.get_template('home.html')
     response = requests.get('https://api.nytimes.com/svc/search/v2/articlesearch.json?q=computer%20security&page=0&api-key=UG6f30PnzgFUgFKQ1lu1H1HvGMS0GOta')
@@ -27,4 +29,10 @@ def home(request):
     context = {
         'cleansed_document_list': cleansed_document_list,
     }
+    return HttpResponse(template.render(context, request))
+
+#if this returns an no response, no breaches
+def pwned(request):
+    template = loader.get_template('pwned.html')
+    context = {}
     return HttpResponse(template.render(context, request))

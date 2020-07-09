@@ -54,6 +54,8 @@
     text-align:center;
     line-height:30px;
     font-weight:400;
+    background-color: #91699a;
+    cursor:pointer;
   }
   .lead-title{
     margin:150px 0 30px 0;

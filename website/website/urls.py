@@ -23,6 +23,7 @@ urlpatterns = [
 
     #this loads views.py
     path('', views.home, name='home'),
+    path('emailchecker/', views.pwned, name='pwned'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
 
