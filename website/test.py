@@ -1,20 +1,30 @@
 
 
-import requests
 import json
+import requests
 
-response = requests.get('https://api.nytimes.com/svc/search/v2/articlesearch.json?q=computer%20security&page=0&api-key=UG6f30PnzgFUgFKQ1lu1H1HvGMS0GOta')
-cyberdata = response.json()
-documents = cyberdata['response']['docs']
-cleansed_document_list = []
-for doc in documents:
-    cleansed_document_list.append(
+headers = {
+    "hibp-api-key": "38eb580ec92d4403becca47370ac9d1f"
+}
+
+response = requests.get('https://haveibeenpwned.com/api/v3/breachedaccount/natsuki951@hotmail.com?truncateResponse=false', headers=headers)
+
+breachdata = response.json()
+
+# print(response)
+cleansedbreach = []
+for compromised in breachdata:
+    cleansedbreach.append(
         {
-            'abstract': doc['abstract'],
-            'web_url': doc['web_url'],
-            'main': doc['headline']['main'],
-            'image':'https://static01.nyt.com/' + doc['multimedia'][0]['url']
+            'Name':compromised['Name'],
+            'BreachDate':compromised['BreachDate'],
+            'LogoPath':compromised['LogoPath'],
+            'Description':compromised['Description']
         }
-        
     )
-print(json.dumps(cleansed_document_list, indent=4, sort_keys=True))
+
+print(cleansedbreach)
+# print(json.dumps(cleansedbreach, indent=4, sort_keys=True))
+
+
+

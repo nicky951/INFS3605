@@ -34,5 +34,24 @@ def home(request):
 #if this returns an no response, no breaches
 def pwned(request):
     template = loader.get_template('pwned.html')
-    context = {}
+
+    headers = {
+        "hibp-api-key": "38eb580ec92d4403becca47370ac9d1f"
+    }
+
+    response = requests.get('https://haveibeenpwned.com/api/v3/breachedaccount/nicholasliang325@gmail.com?truncateResponse=false', headers=headers)
+
+    breachdata = response.json()
+
+    cleansedbreach = []
+    for compromised in breachdata:
+        cleansedbreach.append(
+            {
+                'Name':compromised['Name'],
+                'BreachDate':compromised['BreachDate'],
+                'LogoPath':compromised['LogoPath'],
+                'Description':compromised['Description']
+            }
+        )
+    context = {'cleansedbreach':cleansedbreach}
     return HttpResponse(template.render(context, request))
