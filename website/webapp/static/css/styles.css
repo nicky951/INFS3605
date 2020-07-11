@@ -11,14 +11,14 @@
   .header-banner{
     padding-top:35px;
     padding-bottom:100px;
-    color:#ffffff;
     font-family:Helvetica, serif;
     font-weight:100;
-    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
     background-attachment:scroll, scroll;
     background-position:left top, center center;
     background-repeat:repeat-y, no-repeat;
-    background-size: cover;
+    background-size: 80%;
+    background-position: right;
+    background-image: url("/static/webapp/static/Home.png");
   }
   .container-width{
     width:90%;
@@ -30,15 +30,17 @@
     width:50%;
   }
   .logo{
-    background-color:#fff;
+    background-color:#ffffff;
     border-radius:5px;
     width:130px;
     padding:10px;
     min-height:30px;
     text-align:center;
     line-height:30px;
-    color:#4d114f;
+    color:#582583;
     font-size:23px;
+    font-family:Helvetica, serif;
+    font-weight: 500;
   }
   .menu{
     float:right;
@@ -48,25 +50,38 @@
     float:right;
     font-size:15px;
     color:#eee;
-    width:130px;
+    widows: 150px;
     padding:10px;
     min-height:50px;
     text-align:center;
     line-height:30px;
     font-weight:400;
-    background-color: #91699a;
+    background-color: #582583;
     cursor:pointer;
+    border: #ffffff;
+    border-style: solid;
+    font-family:Helvetica, serif;
+    border-radius:5px;
+    margin-right:5px;
+  }
+  .menu-item:hover{
+    background-color:#ffffff;
+    color:#582583;
+    border:#582583;
+    border-style: solid;
   }
   .lead-title{
     margin:150px 0 30px 0;
     font-size:40px;
+    color: #ffffff;
+    font-family:Helvetica, serif;
   }
   .sub-lead-title{
     max-width:650px;
     line-height:30px;
     margin-bottom:30px;
     font-size: 40px;
-    color:#c6c6c6;
+    font-family:Helvetica, serif;
   }
   .lead-btn{
     margin-top:15px;
@@ -77,18 +92,20 @@
     text-align:center;
     letter-spacing:3px;
     line-height:30px;
-    background-color:#d983a6;
+    background-color:#582583;
+    color: #ffffff;
     border-radius:5px;
     transition:all 0.5s ease;
     cursor:pointer;
+    font-family:Helvetica, serif;
   }
   .lead-btn:hover{
-    background-color:#fff;
-    color:#4c114e;
+    background-color:#ffffff;
+    color:#582583;
   }
   .lead-btn:active{
     background-color:#ffffff;
-    color:#4c114e;
+    color:#582583;
   }
   .flex-sect{
     background-color:#fafafa;
@@ -100,7 +117,7 @@
     font-size:2em;
     text-align:center;
     font-weight:700;
-    color:#555;
+    color:#222222;
     padding:5px;
   }
   .flex-desc{
@@ -406,17 +423,18 @@
     background-color:white;
     margin-bottom:30px;
     box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border-radius:3px;
+    border-radius:15px;
     font-weight:100;
     overflow:hidden;
     text-align:center;
   }
   .badge-header{
-    height:115px;
-    background-image:/*url("//grapesjs.com/img/bg-gr-v.png"),*/ url("https://www.effra.eu/sites/default/files/fotolia_cybersecurity_xl.jpg");
+    height:135px;
+    background-image: url("/static/webapp/static/Home.png");
+    background-color: #b1b1b1;
     background-position:left top, center center;
     background-attachment:scroll;
-    background-size: 290px 115px;
+    background-size: 290px 170px;
     overflow:hidden;
   }
   .badge-name{
@@ -446,7 +464,7 @@
   }
   .badge-foot{
     color:#fff;
-    background-color:#a290a5;
+    background-color:#582583;
     padding-top:13px;
     padding-bottom:13px;
     display:flex;
@@ -458,7 +476,7 @@
     line-height:35px;
     font-weight:700;
     background-color:#fff;
-    color:#a290a5;
+    color:#1C295E;
     display:block;
     border-radius:100%;
     margin:0 10px;
