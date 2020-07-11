@@ -30,30 +30,15 @@
     width:50%;
   }
   .logo{
-    background-color:#fff;
+    background-color:#ffffff;
     border-radius:5px;
     width:130px;
     padding:10px;
     min-height:30px;
     text-align:center;
     line-height:30px;
-    color:#4d114f;
+    color:#582583;
     font-size:23px;
-  }
-  .menu{
-    float:right;
-    width:50%;
-  }
-  .menu-item{
-    float:right;
-    font-size:15px;
-    color:#eee;
-    width:130px;
-    padding:10px;
-    min-height:50px;
-    text-align:center;
-    line-height:30px;
-    font-weight:400;
   }
   .lead-title{
     margin:150px 0 30px 0;
@@ -85,7 +70,7 @@
     color:#ffffff;
   }
   .lead-btn:active{
-    background-color:#501F3A;
+    background-color:#582583;
     color:#fff;
   }
   .flex-sect{
