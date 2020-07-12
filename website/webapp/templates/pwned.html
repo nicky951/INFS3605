@@ -14,15 +14,13 @@
     
     var result = JSON.parse(request.response);
     var breachTable = document.getElementById('breachtable');
-    
-    console.log(breachTable);
 
     for(var i = 0; i < result.length; i++) {
       var row = breachTable.insertRow(i + 1);
       var newC1 = row.insertCell(0);
       newC1.innerHTML = result[i]['Name'];
       var newC2 = row.insertCell(1);
-      newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto; background-color:black;\">";
+      newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto;\">";
       var newC3 = row.insertCell(2);
       newC3.innerHTML = result[i]['BreachDate'];
       var newC4 = row.insertCell(3);
@@ -32,11 +30,10 @@
     document.getElementById('breachtable').style.visibility = 'visible';
   }
 </script>
-
 <link rel="stylesheet" type="text/css" href= "{% static 'css/pwned.css' %}">
 <div id="check_title">Check your Email
 </div>
-<form class="form">
+<form class="form" style="margin-left: 200px; margin-right: 200px; border-radius: 20px;">
   <div class="form-group">
   </div>
   <div class="form-group">
@@ -49,12 +46,12 @@
     <button type="button" class="button" id="check" onclick="checkFunction()">Check</button>
   </div>
 </form>
-<table class="table" id="breachtable" style="visibility: hidden;">
+<table class="table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif;">
   <thead>
       <tr>
           <th>Breach</th>
           <th>Logo</th>
-          <th>Date</th>
+          <th style="width: 200px;">Date</th>
           <th>Details</th>
       </tr>
   </thead>
