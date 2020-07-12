@@ -7,13 +7,28 @@
 
     var request = new XMLHttpRequest();
 
-    request.open('GET', jsonRequest);
+    request.open('GET', jsonRequest, false);
     request.setRequestHeader("hibp-api-key", "38eb580ec92d4403becca47370ac9d1f");
     request.setRequestHeader("Access-Control-Allow-Origin", "*");
     request.send();
-    var response = request.responseJson;
-    console.log(response);
-    document.getElementById('label').innerHTML = jsonRequest; 
+    
+    var result = JSON.parse(request.response);
+    var breachTable = document.getElementById('breachtable');
+    
+    console.log(breachTable);
+
+    for(var i = 0; i < result.length; i++) {
+      var row = breachTable.insertRow(i + 1);
+      var newC1 = row.insertCell(0);
+      newC1.innerHTML = result[i]['Name'];
+      var newC2 = row.insertCell(1);
+      newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto; background-color:black;\">";
+      var newC3 = row.insertCell(2);
+      newC3.innerHTML = result[i]['BreachDate'];
+      var newC4 = row.insertCell(3);
+      newC4.innerHTML = result[i]['Description'];
+    }
+    
     document.getElementById('breachtable').style.visibility = 'visible';
   }
 </script>
@@ -32,10 +47,8 @@
   </div>
   <div class="form-group">
     <button type="button" class="button" id="check" onclick="checkFunction()">Check</button>
-
   </div>
 </form>
-<label id="label"> test123</label>
 <table class="table" id="breachtable" style="visibility: hidden;">
   <thead>
       <tr>
@@ -46,13 +59,5 @@
       </tr>
   </thead>
   <tbody>
-    {% for breach in cleansedbreach %}
-    <tr>
-      <td>{{breach.Name}}</td>
-      <td style="background-color:black"> <img src="{{breach.LogoPath}}" style="width: 100px; height: auto;"></img></td>
-      <td>{{breach.BreachDate}}</td>
-      <td>{{breach.Description}}</td>
-    </tr>
-    {% endfor %} 	  
   </tbody>
 </table>

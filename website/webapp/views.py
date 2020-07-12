@@ -40,7 +40,7 @@ def pwned(request):
     }
 
     response = requests.get('https://haveibeenpwned.com/api/v3/breachedaccount/nicholasliang325@gmail.com?truncateResponse=false', headers=headers)
-
+    
     breachdata = response.json()
 
     cleansedbreach = []
