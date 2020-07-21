@@ -17,15 +17,16 @@ def home(request):
     documents = cyberdata['response']['docs']
     cleansed_document_list = []
     for doc in documents:
-        cleansed_document_list.append(
-            {
-                'abstract': doc['abstract'],
-                'web_url': doc['web_url'],
-                'main': doc['headline']['main'],
-                'image':'https://static01.nyt.com/' + doc['multimedia'][0]['url']
-            }
-            
-        )
+        if len(doc['multimedia']) > 0:
+            cleansed_document_list.append(
+                {
+                    'abstract': doc['abstract'],
+                    'web_url': doc['web_url'],
+                    'main': doc['headline']['main'],
+                    'image':'https://static01.nyt.com/' + doc['multimedia'][0]['url']
+                }
+                
+            )
     context = {
         'cleansed_document_list': cleansed_document_list,
     }

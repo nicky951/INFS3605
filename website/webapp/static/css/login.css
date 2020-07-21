@@ -99,59 +99,6 @@
     justify-content:space-around;
     flex-flow:wrap;
   }
-  .card{
-    background-color:white;
-    height:300px;
-    width:300px;
-    margin-bottom:30px;
-    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    border-radius:2px;
-    transition:all 0.5s ease;
-    font-weight:100;
-    overflow:hidden;
-  }
-  .card:hover{
-    margin-top:-5px;
-    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
-  }
-  .card-header{
-    height:155px;
-    background-image:url("//placehold.it/350x250/78c5d6/fff/image1.jpg");
-    background-size:cover;
-    background-position:center center;
-  }
-  .card-header.ch2{
-    background-image:url("//placehold.it/350x250/459ba8/fff/image2.jpg");
-  }
-  .card-header.ch3{
-    background-image:url("//placehold.it/350x250/79c267/fff/image3.jpg");
-  }
-  .card-header.ch4{
-    background-image:url("//placehold.it/350x250/c5d647/fff/image4.jpg");
-  }
-  .card-header.ch5{
-    background-image:url("//placehold.it/350x250/f28c33/fff/image5.jpg");
-  }
-  .card-header.ch6{
-    background-image:url("//placehold.it/350x250/e868a2/fff/image6.jpg");
-  }
-  .card-body{
-    padding:15px 15px 5px 15px;
-    color:#555;
-  }
-  .card-title{
-    font-size:1.4em;
-    margin-bottom:5px;
-  }
-  .card-sub-title{
-    color:#b3b3b3;
-    font-size:1em;
-    margin-bottom:15px;
-  }
-  .card-desc{
-    font-size:0.85rem;
-    line-height:17px;
-  }
   .am-sect{
     padding-top:100px;
     padding-bottom:100px;
@@ -450,12 +397,13 @@
     margin:0 10px;
   }
   #i9x7{
-    background-image:linear-gradient(#501F3A,#501F3A);
+    background-color: #582583;
     background-repeat:repeat;
     background-position:left top;
     background-attachment:scroll;
     background-size:auto;
-    color:#cccccc;
+    font-weight: bold;
+    color:#ffffff;
     font-size:15px;
   }
   #idya{
@@ -471,15 +419,17 @@
   #iq06{
     background-position: center;
     background-size: cover;
-    background-image: url('https://www.ge.com/research/sites/default/files/styles/hero_banner/public/images/capabilities/2018-11/technology-domain-cyber-security-hero.jpg?itok=xlm5aFit');
+    background-color:#222222;
+    background-image: url("/static/webapp/static/Home.png");
   }
   #i84nk{
     text-align:center;
-    color:#cccccc;
+    color:#ffffff;
     background-image:none;
     background-repeat:repeat;
     background-position:left top;
     background-attachment:scroll;
+    font-weight: bold;
     background-size:auto;
   }
   #i9w4q{
@@ -494,8 +444,8 @@
   }
   #iiwik{
     margin:15px 320px 0 400px;
-    border:solid #eee9ee;
-    background-image:linear-gradient(#501F3A,#501F3A);
+    border:solid #582583;
+    color: #582583;
     background-repeat:repeat;
     background-position:left top;
     background-attachment:scroll;
