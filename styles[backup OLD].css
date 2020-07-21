@@ -6,19 +6,19 @@
   }
   .clearfix{
     clear:both;
-    background-color: transparent;
   }
+
   .header-banner{
     padding-top:35px;
     padding-bottom:100px;
-    color:#ffffff;
     font-family:Helvetica, serif;
     font-weight:100;
-    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
     background-attachment:scroll, scroll;
     background-position:left top, center center;
     background-repeat:repeat-y, no-repeat;
-    background-size:contain, cover;
+    background-size: 80%;
+    background-position: right;
+    background-image: url("/static/webapp/static/Home.png");
   }
   .container-width{
     width:90%;
@@ -39,16 +39,49 @@
     line-height:30px;
     color:#582583;
     font-size:23px;
+    font-family:Helvetica, serif;
+    font-weight: 500;
+  }
+  .menu{
+    float:right;
+    width:50%;
+  }
+  .menu-item{
+    float:right;
+    font-size:15px;
+    color:#eee;
+    widows: 150px;
+    padding:10px;
+    min-height:50px;
+    text-align:center;
+    line-height:30px;
+    font-weight:400;
+    background-color: #582583;
+    cursor:pointer;
+    border: #ffffff;
+    border-style: solid;
+    font-family:Helvetica, serif;
+    border-radius:5px;
+    margin-right:5px;
+  }
+  .menu-item:hover{
+    background-color:#ffffff;
+    color:#582583;
+    border:#582583;
+    border-style: solid;
   }
   .lead-title{
     margin:150px 0 30px 0;
     font-size:40px;
+    color: #ffffff;
+    font-family:Helvetica, serif;
   }
   .sub-lead-title{
     max-width:650px;
     line-height:30px;
     margin-bottom:30px;
-    color:#c6c6c6;
+    font-size: 40px;
+    font-family:Helvetica, serif;
   }
   .lead-btn{
     margin-top:15px;
@@ -59,19 +92,20 @@
     text-align:center;
     letter-spacing:3px;
     line-height:30px;
-    background-color:#ffffff;
+    background-color:#582583;
+    color: #ffffff;
     border-radius:5px;
     transition:all 0.5s ease;
     cursor:pointer;
-    color:#ffffff;
+    font-family:Helvetica, serif;
   }
   .lead-btn:hover{
     background-color:#ffffff;
-    color:#ffffff;
+    color:#582583;
   }
   .lead-btn:active{
-    background-color:#582583;
-    color:#fff;
+    background-color:#ffffff;
+    color:#582583;
   }
   .flex-sect{
     background-color:#fafafa;
@@ -83,7 +117,7 @@
     font-size:2em;
     text-align:center;
     font-weight:700;
-    color:#555;
+    color:#222222;
     padding:5px;
   }
   .flex-desc{
@@ -98,6 +132,55 @@
     display:flex;
     justify-content:space-around;
     flex-flow:wrap;
+  }
+  .card{
+    background-color: #FFFFFF;
+    height:400px;
+    width:300px;
+    margin-bottom:30px;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius:2px;
+    transition:all 0.5s ease;
+    font-weight:100;
+    overflow:hidden;
+  }
+  .card:hover{
+    margin-top:-5px;
+    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card-header{
+    height:155px;
+    background-image:url("//placehold.it/350x250/78c5d6/fff/image1.jpg");
+    background-size:cover;
+    background-position:center center;
+  }
+  .card-header.ch2{
+    background-image:url("//placehold.it/350x250/459ba8/fff/image2.jpg");
+  }
+  .card-header.ch3{
+    background-image:url("//placehold.it/350x250/79c267/fff/image3.jpg");
+  }
+  .card-header.ch4{
+    background-image:url("//placehold.it/350x250/c5d647/fff/image4.jpg");
+  }
+  .card-header.ch5{
+    background-image:url("//placehold.it/350x250/f28c33/fff/image5.jpg");
+  }
+  .card-header.ch6{
+    background-image:url("//placehold.it/350x250/e868a2/fff/image6.jpg");
+  }
+  .card-body{
+    padding:15px 15px 5px 15px;
+    color:#555;
+  }
+  .card-title{
+    font-size:1rem;
+    margin-bottom:5px;
+  }
+  .card-desc{
+    color:#b3b3b3;
+    font-size:0.8em;
+    line-height:17px;
   }
   .am-sect{
     padding-top:100px;
@@ -316,16 +399,16 @@
     background-color:#573f5c;
   }
   .bdg-sect{
-    padding-top:100px;
+    padding-top:50px;
     padding-bottom:100px;
     font-family:Helvetica, serif;
-    background-color:#fafafa;
+    background-color:#222222;
   }
   .bdg-title{
     text-align:center;
     font-size:2em;
     margin-bottom:55px;
-    color:#555555;
+    color:#ffffff;
   }
   .badges{
     padding:20px;
@@ -340,16 +423,18 @@
     background-color:white;
     margin-bottom:30px;
     box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.2);
-    border-radius:3px;
+    border-radius:15px;
     font-weight:100;
     overflow:hidden;
     text-align:center;
   }
   .badge-header{
-    height:115px;
-    background-image:url("//grapesjs.com/img/bg-gr-v.png"), url("//grapesjs.com/img/work-desk.jpg");
+    height:135px;
+    background-image: url("/static/webapp/static/Home.png");
+    background-color: #b1b1b1;
     background-position:left top, center center;
-    background-attachment:scroll, fixed;
+    background-attachment:scroll;
+    background-size: 290px 170px;
     overflow:hidden;
   }
   .badge-name{
@@ -379,7 +464,7 @@
   }
   .badge-foot{
     color:#fff;
-    background-color:#a290a5;
+    background-color:#582583;
     padding-top:13px;
     padding-bottom:13px;
     display:flex;
@@ -391,102 +476,10 @@
     line-height:35px;
     font-weight:700;
     background-color:#fff;
-    color:#a290a5;
+    color:#1C295E;
     display:block;
     border-radius:100%;
     margin:0 10px;
-  }
-  #i9x7{
-    background-color: #582583;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    font-weight: bold;
-    color:#ffffff;
-    font-size:15px;
-  }
-  #idya{
-    background-color: transparent;
-    background-repeat:repeat, repeat;
-    background-position:left top, left top;
-    background-attachment:scroll, scroll;
-    background-size:auto, auto;
-    max-width:900px;
-    width:800px;
-    height:550px;
-  }
-  #iq06{
-    background-position: center;
-    background-size: cover;
-    background-color:#222222;
-    background-image: url("/static/webapp/static/Home.png");
-  }
-  #i84nk{
-    text-align:center;
-    color:#ffffff;
-    background-image:none;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    font-weight: bold;
-    background-size:auto;
-  }
-  #i9w4q{
-    background-image:none;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    margin:0 200px 30px 200px;
-    max-width:400px;
-    color:#CCCCCC;
-  }
-  #iiwik{
-    margin:15px 320px 0 400px;
-    border:solid #582583;
-    color: #582583;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    height:50px;
-    width:150px;
-    float:right;
-  }
-  #iuqs{
-    box-shadow:0 0 5px 0 #501F3A;
-    background-image:linear-gradient(#501F3A,#501F3A);
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-  }
-  #iifk{
-    box-shadow:0 0 5px 0 #501F3A;
-    background-image:linear-gradient(#501F3A,#501F3A), none;
-    background-repeat:repeat, repeat;
-    background-position:left top, left top;
-    background-attachment:scroll, scroll;
-    background-size:auto, auto;
-  }
-  #ifkr{
-    box-shadow:0 0 5px 0 #501F3A;
-    background-image:linear-gradient(#501F3A,#501F3A);
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-  }
-  #iv42g7{
-    background-image:none;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    margin:0 200px 30px 200px;
-    max-width:400px;
-    color:#CCCCCC;
   }
   @media (max-width: 768px){
     .foot-form-cont{

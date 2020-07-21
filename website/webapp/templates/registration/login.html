@@ -1,28 +1,30 @@
 <!-- templates/registration/login.html -->
 
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/login.css' %}">
+<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
 
-<header id="iq06" class="header-banner">
-  <div id="idya" class="container-width">
-    <div class="logo-container">
-      <div id="i9x7" class="logo">Anova Consulting
+<header id="login-iq06" class="login-header-banner">
+  <div id="login-idya" class="login-container-width">
+    <div class="login-logo-container">
+      <div id="login-i9x7" class="login-logo">Anova Consulting
       </div>
     </div>
     <div class="clearfix">
     </div>
-    <body style="text-align: center;">
-    {% block content %}
-    <div id="i84nk" class="lead-title">Login
-    </div>
-      <form method="post" style="margin: 0 auto;">
-      {% csrf_token %}
-      {{ form.as_p }}
-        <button type="submit" class="lead-btn" id="iiwik">Login</button>
-    </form>
-    {% endblock %}
-  </body>
-  </div>
+    <br></br>
+    <br></br>
+    <br></br>
+      <body style="text-align: center;">
+      {% block content %}
+      <div id="login-i84nk" class="login-lead-title">Login
+      </div>
+        <form method="post" style="margin: 0 auto; color: #41257F;">
+        {% csrf_token %}
+        {{ form.as_p }}
+          <button type="submit" class="login-lead-btn" id="login-iiwik">Login</button>
+      </form>
+      {% endblock %}
+      </body> 
 </header>
 
 

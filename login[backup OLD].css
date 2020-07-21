@@ -1,0 +1,108 @@
+  .login-header-banner{
+    padding-top:35px;
+    color:#ffffff;
+    font-family:Helvetica, serif;
+    font-weight:100;
+    background-attachment:scroll, scroll;
+    background-position:left top, center center;
+    background-repeat:repeat-y, no-repeat;
+    background-size:contain, cover;
+  }
+  .login-container-width{
+    width:90%;
+    max-width:1150px;
+    margin:0 auto;
+  }
+  .login-logo-container{
+    float:left;
+    width:50%;
+  }
+  .login-logo{
+    background-color:#ffffff;
+    border-radius:5px;
+    width:130px;
+    padding:10px;
+    min-height:30px;
+    text-align:center;
+    line-height:30px;
+    color:#41257F;
+    font-size:23px;
+  }
+  .login-lead-title{
+    margin:150px 0 30px 0;
+    font-size:40px;
+  }
+  .login-lead-btn{
+    margin-top:15px;
+    padding:10px;
+    width:190px;
+    min-height:30px;
+    font-size:20px;
+    text-align:center;
+    letter-spacing:3px;
+    line-height:30px;
+    background-color:#ffffff;
+    border-radius:5px;
+    transition:all 0.5s ease;
+    cursor:pointer;
+    color:#ffffff;
+    box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  .login-lead-btn:hover{
+    margin-top:-5px;
+    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+  .login-lead-btn:active{
+    background-color:#41257F;
+    color:#fff;
+  }
+  #login-i9x7{
+    background-color: #41257F;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    font-weight: bold;
+    color:#ffffff;
+    font-size:15px;
+  }
+  #login-idya{
+    background-color: transparent;
+    background-repeat:repeat, repeat;
+    background-position:left top, left top;
+    background-attachment:scroll, scroll;
+    background-size:auto, auto;
+    max-width:900px;
+    width:800px;
+    height:100%;
+  }
+  #login-iq06{
+    background-position: center;
+    background-size: cover;
+    background-color:#222222;
+    background-image: url("/static/webapp/static/Home2.png");
+  }
+  #i84nk{
+    text-align:center;
+    color:#41257F;
+    background-image:none;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    font-weight: bold;
+    background-size:auto;
+  }
+  #login-iiwik{
+    margin:15px 320px 0 400px;
+    border:solid #41257F;
+    color: #41257F;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+    height:50px;
+    width:150px;
+    float:right;
+  }
+
+  
