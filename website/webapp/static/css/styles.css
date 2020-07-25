@@ -15,8 +15,8 @@
     background-attachment:scroll, scroll;
     background-position:left top, center center;
     background-repeat:repeat-y, no-repeat;
-    background-size: 80%;
-    background-position: right;
+    background-size: 100%;
+    background-position: center;
     background-image: url("/static/webapp/static/Home.png");
     height: 500px;
   }
@@ -30,14 +30,14 @@
     width:50%;
   }
   .logo{
-    background-color:#ffffff;
+    background-color:#41257F;
     border-radius:5px;
     width:130px;
     padding:10px;
     min-height:30px;
     text-align:center;
     line-height:30px;
-    color:#41257F;
+    color:#FFFFFF;
     font-size:23px;
     font-family:Helvetica, serif;
     font-weight: 500;
@@ -58,7 +58,7 @@
     font-weight:400;
     background-color: #41257F;
     cursor:pointer;
-    border: #ffffff;
+    border: #55B2AE;
     border-style: solid;
     font-family:Helvetica, serif;
     border-radius:5px;
@@ -73,7 +73,7 @@
   .lead-title{
     margin:150px 0 30px 0;
     font-size:40px;
-    color: #ffffff;
+    color: #41257F;
     font-family:Helvetica, serif;
   }
   .sub-lead-title{
@@ -100,12 +100,12 @@
     font-family:Helvetica, serif;
   }
   .lead-btn:hover{
-    background-color:#ffffff;
-    color:#41257F;
+    background-color:#EB852F;
+    color:#ffffff;
   }
   .lead-btn:active{
-    background-color:#ffffff;
-    color:#41257F;
+    background-color:#EB852F;
+    color:#ffffff;
   }
   .flex-sect{
     background-color:#fafafa;
@@ -320,11 +320,11 @@
   }
   .badge-header{
     height:135px;
-    background-image: url("/static/webapp/static/Home.png");
+    background-image: url("/static/webapp/static/Profile.png");
     background-color: #b1b1b1;
     background-position:left top, center center;
     background-attachment:scroll;
-    background-size: 290px 170px;
+    background-size: 290px 100px;
     overflow:hidden;
   }
   .badge-name{
@@ -475,6 +475,38 @@
     height:50px;
     width:150px;
     float:right;
+  }
+  .text{  
+    color: #7D7D7D;
+    font-size: 20px;
+    font-size: 10vw;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 61.2%;
+    letter-spacing: 2px;
+    animation: typing 3.5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid #EB852F;
+    box-sizing: border-box;
+  }
+  @keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 40%
+    }
+  }
+
+  @keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #EB852F; 
+    }
   }
   .pwned-form{
     border-radius:3px;

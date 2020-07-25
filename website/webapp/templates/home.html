@@ -1,6 +1,6 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
-<header class="header-banner" id="iin1" style="background-color: #222222;">
+<header class="header-banner" id="iin1" style="background-color: #ffffff;">
     <div class="container-width" id="ifju">
       <div class="logo-container" id="io2t">
         <div class="logo"> Anova Consulting
@@ -16,9 +16,9 @@
       </nav>
       <div class="clearfix">
       </div>
-      <div class="lead-title">CYBERSHIELD HOME PAGE
+      <div class="lead-title">
       </div>
-      <div class="sub-lead-title" style="color: #ffffff; font-weight: bold;"> {% if user.is_authenticated %}
+      <div class="sub-lead-title" style="color: #41257F; font-weight: bold;"> {% if user.is_authenticated %}
         Hi {{ user.username }}!
         <div class="lead-btn">INTERACTIVE GAME
         </div>
@@ -26,6 +26,9 @@
         <p>You are not logged in</p>
         <div class="lead-btn" onclick= "location.href='/accounts/login'">Login</div>
       {% endif %}
+      </div>
+      <div>
+        <p class="text">Security in your own hands</p>
       </div>
     </div>
   </header>
