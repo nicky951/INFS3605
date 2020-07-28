@@ -26,5 +26,6 @@ urlpatterns = [
     path('emailchecker/', views.pwned, name='pwned'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('secinfohome/', views.info, name='info'),
 
 ]

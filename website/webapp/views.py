@@ -54,3 +54,8 @@ def pwned(request):
     #     )
     context = {}
     return HttpResponse(template.render(context, request))
+
+def info(request):
+    template = loader.get_template('sec_info_home.html')
+    context = {}
+    return HttpResponse(template.render(context, request))

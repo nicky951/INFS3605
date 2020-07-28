@@ -150,15 +150,15 @@
   }
   .card-header{
     height:155px;
-    background-image:url("//placehold.it/350x250/78c5d6/fff/image1.jpg");
+    background-image:url("/static/webapp/static/Password.jpg");
     background-size:cover;
     background-position:center center;
   }
   .card-header.ch2{
-    background-image:url("//placehold.it/350x250/459ba8/fff/image2.jpg");
+    background-image:url("/static/webapp/static/Wfh.jpg");
   }
   .card-header.ch3{
-    background-image:url("//placehold.it/350x250/79c267/fff/image3.jpg");
+    background-image:url("/static/webapp/static/Phishing.jpeg");
   }
   .card-header.ch4{
     background-image:url("//placehold.it/350x250/c5d647/fff/image4.jpg");

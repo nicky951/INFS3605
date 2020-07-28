@@ -1,0 +1,103 @@
+{% load static %}
+</script>
+<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<header class="header-banner" id="iin1" style="background-color: #222222;">
+  <div class="container-width" id="ifju">
+    <div class="logo-container" id="io2t">
+      <div class="logo"> Anova Consulting
+      </div>
+    </div>
+    <nav class="menu">
+      <div class="menu-item">AWARENESS GAME
+      </div>
+      <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+      </div>
+      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBARY
+      </div>
+    </nav>
+    <div class="clearfix">
+    </div>
+    <div class="lead-title" style="width: 500px; font-weight: bold;">Security at a Glance
+    </div>
+    </div>
+  </div>
+</header>
+<section class="flex-sect">
+  <div class="container-width">
+    <div class="flex-title" id="iqau8">CyberShield Security Library
+    </div>
+    <div style="text-align: center;">
+      <p style=" text-align:center; display: inline-block; max-width: 700px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+        Protecting yourself online requires more than just a firewall. Read through our CyberShield Security Library below, so that you stay up to date with the best security practices.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card" onclick="location.href='{{cleansed_document_list.0.web_url}}'">
+        <div class="card-header">
+        </div>
+        <div class="card-body"> 
+          <div class="card-title" style="text-align: center;">Password Etiquette
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.0.abstract }}
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='{{cleansed_document_list.1.web_url}}'">
+        <div class="card-header ch2">
+        </div>
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">Cyber @ Home
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.1.abstract }}
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='{{cleansed_document_list.2.web_url}}'">
+        <div class="card-header ch3">
+        </div>
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">Common Social Engineering Attacks
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.2.abstract }}
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='{{cleansed_document_list.3.web_url}}'">
+        <div class="card-header ch4">
+        </div>
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">Prevention Techniques
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.3.abstract }}
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='{{cleansed_document_list.4.web_url}}'">
+        <div class="card-header ch5">
+        </div>
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">Security: A Background
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.4.abstract }}
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="location.href='{{cleansed_document_list.5.web_url}}'">
+        <div class="card-header ch6">
+        </div>
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">Detection Techniques
+          </div>
+          <br>
+          <div class="card-desc">{{ cleansed_document_list.5.abstract }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
