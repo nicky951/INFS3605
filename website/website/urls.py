@@ -17,15 +17,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
 from webapp import views
+import requests
 
 urlpatterns = [
     # path('', TemplateView.as_view(template_name='home.html'), name='home'),
 
     #this loads views.py
-    path('', views.home, name='home'),
     path('emailchecker/', views.pwned, name='pwned'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('secinfohome/', views.info, name='info'),
+    path('', views.home, name='home'),
 
 ]

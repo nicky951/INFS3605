@@ -147,6 +147,7 @@
   .card:hover{
     margin-top:-5px;
     box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
+    cursor:pointer;
   }
   .card-header{
     height:155px;
