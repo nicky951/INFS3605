@@ -59,3 +59,48 @@ def info(request):
     template = loader.get_template('sec_info_home.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def passwordpage(request):
+    template = loader.get_template('passwordpage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def wfhpage(request):
+    template = loader.get_template('wfhpage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def attackpage(request):
+    template = loader.get_template('attackpage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def preventionpage(request):
+    template = loader.get_template('preventionpage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def securitypage(request):
+    template = loader.get_template('securitypage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def detectionpage(request):
+    template = loader.get_template('detectionpage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def netsecuritypage(request):
+    template = loader.get_template('netsecuritypage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def policypage(request):
+    template = loader.get_template('policypage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def aboutuspage(request):
+    template = loader.get_template('aboutuspage.html')
+    context = {}
+    return HttpResponse(template.render(context, request))

@@ -23,10 +23,19 @@ urlpatterns = [
     # path('', TemplateView.as_view(template_name='home.html'), name='home'),
 
     #this loads views.py
+    path('', views.home, name='home'),
     path('emailchecker/', views.pwned, name='pwned'),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('secinfohome/', views.info, name='info'),
-    path('', views.home, name='home'),
+    path('secinfohome/',views.info, name='info'),
+    path('secinfohome/passwordpage', views.passwordpage, name='passwordpage'),
+    path('secinfohome/wfhpage', views.wfhpage, name='wfhpage'),
+    path('secinfohome/attackpage', views.attackpage, name='attackpage'),
+    path('secinfohome/preventionpage', views.preventionpage, name='preventionpage'),
+    path('secinfohome/securitypage', views.securitypage, name='securitypage'),
+    path('secinfohome/detectionpage', views.detectionpage, name='detectionpage'),
+    path('secinfohome/netsecuritypage', views.netsecuritypage, name='netsecuritypage'),
+    path('secinfohome/policypage', views.policypage, name='policypage'),
+    path('secinfohome/aboutuspage', views.aboutuspage, name='aboutuspage'),
 
 ]
