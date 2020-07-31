@@ -3,10 +3,10 @@
   function checkFunction() {
     var email = document.getElementById('i25v').value;
     //get response via CORS proxy
-    //var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+    var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
 
     //for chrome users chrome://flags/#out-of-blink-cors bypass cors
-    var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+    //var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
 
 
     var request = new XMLHttpRequest();
