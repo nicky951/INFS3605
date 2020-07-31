@@ -561,6 +561,17 @@
   #pwned-ipcx{
     font-family:Arial, Helvetica, sans-serif;
   }
+  .standardtext{
+    text-align:justify; 
+    display: inline-block; 
+    max-width: 1000px; 
+    color: rgba(0, 0, 0, 0.5); 
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .listtext{
+    color: rgba(0, 0, 0, 0.5); 
+    font-family: Arial, Helvetica, sans-serif;
+  }
   @media (max-width: 768px){
     .foot-form-cont{
       width:400px;
