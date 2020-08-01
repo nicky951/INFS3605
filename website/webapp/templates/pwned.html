@@ -1,42 +1,52 @@
 {% load static %}
 <script>
   function checkFunction() {
+    load();
+    setTimeout(callRequest,2000);
+  }
+  function load() {
+    document.getElementById('loadingAnimation').style.display = 'block';
+  }
+  function callRequest() {
     var email = document.getElementById('i25v').value;
-    //get response via CORS proxy
-    var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+      
+      //get response via CORS proxy
+      var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
 
-    //for chrome users chrome://flags/#out-of-blink-cors bypass cors
-    //var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+      //for chrome users chrome://flags/#out-of-blink-cors bypass cors
+      //var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+      var request = new XMLHttpRequest();
+      request.open('GET', jsonRequest, false);
+      request.setRequestHeader("hibp-api-key", "38eb580ec92d4403becca47370ac9d1f");
+      request.setRequestHeader("Access-Control-Allow-Origin", "*");
+      request.setRequestHeader("Content-Type", "application/json");
+      request.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
+      request.setRequestHeader("Access-Control-Allow-Headers", "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
+      request.send();
+      
+      var responseStatus = request.status;
 
+      if(responseStatus == 200) {
+        var result = JSON.parse(request.response);
+        var breachTable = document.getElementById('breachtable');
 
-    var request = new XMLHttpRequest();
-
-    request.open('GET', jsonRequest, false);
-    request.setRequestHeader("hibp-api-key", "38eb580ec92d4403becca47370ac9d1f");
-    request.setRequestHeader("Access-Control-Allow-Origin", "*");
-    request.setRequestHeader("Content-Type", "application/json");
-    request.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
-    request.setRequestHeader("Access-Control-Allow-Headers", "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
-    request.send();
-    
-    var result = JSON.parse(request.response);
-    var breachTable = document.getElementById('breachtable');
-
-    for(var i = 0; i < result.length; i++) {
-      var row = breachTable.insertRow(i + 1);
-      var newC1 = row.insertCell(0);
-      newC1.innerHTML = result[i]['Name'];
-      var newC2 = row.insertCell(1);
-      newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto;\">";
-      var newC3 = row.insertCell(2);
-      newC3.innerHTML = result[i]['BreachDate'];
-      var newC4 = row.insertCell(3);
-      newC4.innerHTML = result[i]['Description'];
-    }
-    
-    document.getElementById('breachtable').style.visibility = 'visible';
+        for(var i = 0; i < result.length; i++) {
+        var row = breachTable.insertRow(i + 1);
+        var newC1 = row.insertCell(0);
+        newC1.innerHTML = result[i]['Name'];
+        var newC2 = row.insertCell(1);
+        newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto;\">";
+        var newC3 = row.insertCell(2);
+        newC3.innerHTML = result[i]['BreachDate'];
+        var newC4 = row.insertCell(3);
+        newC4.innerHTML = result[i]['Description'];
+      }
+      document.getElementById('loadingAnimation').style.display = 'none';
+      document.getElementById('breachtable').style.visibility = 'visible';
+      } 
   }
 </script>
+
 <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #222222;">
   <div class="container-width" id="ifju">
@@ -62,45 +72,48 @@
 <br></br>
 <section class="flex-sect">
 <div style="text-align: center;">
-  <p style=" text-align:justify; display: inline-block; max-width: 1000px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+  <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
     The uncertainty of 2020 as a result of COVID19 has created an environment that has encouraged Cyber Crime to flourish.
     With many attackers taking advantage of the world's vulnerable state, it is unsurprising that 2020 is set to break the record for the number
     of data breaches; 8.4 billion exposures in just the first quarter.
   </p>
-  <p style=" text-align:justify; display: inline-block; max-width: 1000px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+  <br>
+  <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
     It is important for you as an individual to protect yourself in this unique digital landscape and take security into your own hands. Use our email checking tool
-    you can identify whether or not your email and credentials have been involved in any security breaches so that you can take any remediative action.
-    Don't wait any longer! Hurry and Patch your Leak.
+    you can identify whether or not your email and credentials have been involved in any security breaches so that you can take any remediative action. Don't wait any longer! Hurry and Patch your Leak.
   </p>
 </div>
 <br></br>
-<form class="pwned-form" style="margin-left: 200px; margin-right: 200px; border-radius: 20px;">
-  <div class="form-group">
-  </div>
-  <div class="form-group">
-    <label class="pwned-label" id="pwned-ipcx">Email</label>
-    <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v"/>
-  </div>
-  <div class="form-group">
-  </div>
-  <div class="form-group">
-    <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
-  </div>
-</form>
-<br></br>
-<br></br>
-<table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif;">
-  <thead>
-      <tr>
-          <th>Breach</th>
-          <th>Logo</th>
-          <th style="width: 200px;">Date</th>
-          <th>Details</th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
+<div style="text-align: center;">
+  <form class="pwned-form" style="width: 900px; border-radius: 20px; display:inline-block">
+    <div class="form-group">
+    </div>
+    <div class="form-group">
+      <label class="pwned-label" id="pwned-ipcx">Email</label>
+      <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v"/>
+    </div>
+    <div class="form-group">
+    </div>
+    <div class="form-group">
+      <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
+    </div>
+  </form>
+</div>
+<div class="loader" style="display: none;" id="loadingAnimation"></div>
+<div style="text-align: center;">
+  <table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif; display: inline-block;">
+    <thead>
+        <tr>
+            <th>Breach</th>
+            <th>Logo</th>
+            <th style="width: 200px;">Date</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
 <br></br>
 <br></br>
 <br></br>
