@@ -48,7 +48,7 @@
 </script>
 
 <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
-<header class="header-banner" id="iin1" style="background-color: #222222;">
+<header class="header-banner" id="iin1" style="background-color: #ffffff;">
   <div class="container-width" id="ifju">
     <div class="logo-container" id="io2t">
       <div class="logo"> Anova Consulting
@@ -71,50 +71,52 @@
 </header>
 <br></br>
 <section class="flex-sect">
-<div style="text-align: center;">
-  <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
-    The uncertainty of 2020 as a result of COVID19 has created an environment that has encouraged Cyber Crime to flourish.
-    With many attackers taking advantage of the world's vulnerable state, it is unsurprising that 2020 is set to break the record for the number
-    of data breaches; 8.4 billion exposures in just the first quarter.
-  </p>
-  <br>
-  <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
-    It is important for you as an individual to protect yourself in this unique digital landscape and take security into your own hands. Use our email checking tool
-    you can identify whether or not your email and credentials have been involved in any security breaches so that you can take any remediative action. Don't wait any longer! Hurry and Patch your Leak.
-  </p>
-</div>
-<br></br>
-<div style="text-align: center;">
-  <form class="pwned-form" style="width: 900px; border-radius: 20px; display:inline-block">
-    <div class="form-group">
+  <div class="container-width" id="ifju">
+    <div style="text-align: center;">
+      <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+        The uncertainty of 2020 as a result of COVID19 has created an environment that has encouraged Cyber Crime to flourish.
+        With many attackers taking advantage of the world's vulnerable state, it is unsurprising that 2020 is set to break the record for the number
+        of data breaches; 8.4 billion exposures in just the first quarter.
+      </p>
+      <br>
+      <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+        It is important for you as an individual to protect yourself in this unique digital landscape and take security into your own hands. Use our email checking tool
+        you can identify whether or not your email and credentials have been involved in any security breaches so that you can take any remediative action. Don't wait any longer! Hurry and Patch your Leak.
+      </p>
     </div>
-    <div class="form-group">
-      <label class="pwned-label" id="pwned-ipcx">Email</label>
-      <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v"/>
+    <br></br>
+    <div style="text-align: center;">
+      <form class="pwned-form" style="width: 900px; border-radius: 20px; display:inline-block">
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <label class="pwned-label" id="pwned-ipcx">Email</label>
+          <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v"/>
+        </div>
+        <div class="form-group">
+        </div>
+        <div class="form-group">
+          <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
+        </div>
+      </form>
     </div>
-    <div class="form-group">
+    <div class="loader" style="display: none;" id="loadingAnimation"></div>
+    <div style="text-align: center;">
+      <table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif; display: inline-block;">
+        <thead>
+            <tr>
+                <th>Breach</th>
+                <th>Logo</th>
+                <th style="width: 200px;">Date</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </div>
-    <div class="form-group">
-      <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
-    </div>
-  </form>
-</div>
-<div class="loader" style="display: none;" id="loadingAnimation"></div>
-<div style="text-align: center;">
-  <table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif; display: inline-block;">
-    <thead>
-        <tr>
-            <th>Breach</th>
-            <th>Logo</th>
-            <th style="width: 200px;">Date</th>
-            <th>Details</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-</div>
-<br></br>
-<br></br>
-<br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+  </div>
 </section>
