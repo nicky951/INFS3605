@@ -7,6 +7,10 @@
   function load() {
     document.getElementById('loadingAnimation').style.display = 'block';
   }
+  
+  function disappear() {
+    document.getElementById('nobreach').style.display = 'none';
+  }
   function callRequest() {
     var email = document.getElementById('i25v').value;
       
@@ -40,9 +44,12 @@
         newC3.innerHTML = result[i]['BreachDate'];
         var newC4 = row.insertCell(3);
         newC4.innerHTML = result[i]['Description'];
-      }
-      document.getElementById('loadingAnimation').style.display = 'none';
-      document.getElementById('breachtable').style.visibility = 'visible';
+        }
+
+        document.getElementById('nobreach').style.display = 'block';
+        document.getElementById('loadingAnimation').style.display = 'none';
+        document.getElementById('breachtable').style.visibility = 'visible';
+        
       } 
   }
 </script>
@@ -120,3 +127,23 @@
     <br></br>
   </div>
 </section>
+
+<div id="nobreach" class="modal">
+  <div class="modal-header">
+    <span class="close" onclick="disappear()" style="padding-right: 20px;">&times;</span>
+  </div>
+  <div class="modal-content">
+    <div style="padding: 20px;">
+      <h2>Oh no! You have breaches!</h2>
+      <h3>Ensure you take the following steps:</h3>
+      <ol>
+        <li>Find out what type of data was stolen</li>
+        <li>Take a look at the company's response to the breach. </li>
+        <li>Accept the breached company’s offer(s) to help</li>
+        <li>Change and strengthen your logins, passwords and security Q&A</li>
+        <li>Take additional action depending on the stolen data</li>
+        <li>Monitor your accounts closely</li>
+      </ol>
+    </div>
+  </div>
+</div>
