@@ -602,7 +602,7 @@ body {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 400px; /* Location of the box */
+  padding-top: 250px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -612,9 +612,16 @@ body {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-header {
+.modal-header-breach {
   background-color:#F93838;
-  height: 40px;
+  height: 80px;
+  width: 900px;
+  margin: auto;
+}
+
+.modal-header-nobreach {
+  background-color:#5BC26F;
+  height: 80px;
   width: 900px;
   margin: auto;
 }
@@ -629,7 +636,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
