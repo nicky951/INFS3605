@@ -484,6 +484,8 @@ body {
   width:150px;
   float:right;
 }
+
+/* basic typewriter animation sourced: https://css-tricks.com/snippets/css/typewriter-effect/ */
 .text{  
   color: #7D7D7D;
   font-size: 20px;
@@ -561,7 +563,7 @@ body {
 .standardtext{
   text-align:justify; 
   display: inline-block; 
-  max-width: 1000px; 
+  max-width: 900px; 
   color: rgba(0, 0, 0, 0.5); 
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -569,6 +571,8 @@ body {
   color: rgba(0, 0, 0, 0.5); 
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* basic loader tutorial sourced: https://www.w3schools.com/howto/howto_css_loader.asp */
 .loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #41257F;
@@ -597,19 +601,19 @@ body {
   }
 }
 
-/* The Modal (background) */
+/* basic modal tutorial sourced: https://www.w3schools.com/howto/howto_css_modals.asp */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 250px; /* Location of the box */
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 250px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 .modal-header-breach {
@@ -625,7 +629,7 @@ body {
   width: 900px;
   margin: auto;
 }
-/* Modal Content */
+
 .modal-content {
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
@@ -633,8 +637,6 @@ body {
   border: 1px solid #ffffff;
   width: 900px;
 }
-
-/* The Close Button */
 .close {
   color: #ffffff;
   float: right;
@@ -648,3 +650,30 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+.normal-table, td {
+  table-layout: auto;
+  padding: 15px;
+  text-align: left;
+  border-radius: 10px;
+  color: #fafafa;
+  background-color: #fafafa;
+  width:900px;
+}
+
+/* basic meter tutorial sourced: https://css-tricks.com/html5-meter-element/*/
+.meter {
+  width: 500px;
+  height: 80px;
+}
+
+meter::-webkit-meter-bar {
+  background: #fafafa;
+  border: 3px solid #222222;
+}
+
+
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
