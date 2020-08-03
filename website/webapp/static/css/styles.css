@@ -45,6 +45,16 @@ body {
   font-size:23px;
   font-family:Helvetica, serif;
   font-weight: 500;
+  border: #55B2AE;
+  border-style: solid;
+}
+
+.logo:hover{
+  background-color:#ffffff;
+  color:#41257F;
+  border:#41257F;
+  border-style: solid;
+  cursor: pointer;
 }
 
 .menu{
