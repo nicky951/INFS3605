@@ -30,6 +30,11 @@ def home(request):
     }
     return HttpResponse(template.render(context, request))
 
+def game(request):
+    template = loader.get_template('game.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
 #if this returns an no response, no breaches
 def pwned(request):
     template = loader.get_template('pwned.html')

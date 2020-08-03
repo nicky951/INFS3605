@@ -37,5 +37,6 @@ urlpatterns = [
     path('secinfohome/netsecuritypage', views.netsecuritypage, name='netsecuritypage'),
     path('secinfohome/policypage', views.policypage, name='policypage'),
     path('secinfohome/aboutuspage', views.aboutuspage, name='aboutuspage'),
+    path('game/', views.game, name='game'),
 
 ]
