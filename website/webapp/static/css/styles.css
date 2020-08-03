@@ -660,6 +660,7 @@ table.pwned-table td {
 .listtext{
   color: rgba(0, 0, 0, 0.5); 
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 768px){
@@ -757,6 +758,7 @@ table.normal-table {
 table.normal-table td {
   color: rgba(0, 0, 0, 0.5);
   background-color: #fafafa;
+  padding-bottom: 10px;
 }
 
 /* basic meter tutorial sourced: https://css-tricks.com/html5-meter-element/*/
