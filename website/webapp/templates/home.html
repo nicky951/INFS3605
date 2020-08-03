@@ -18,14 +18,10 @@
       </div>
       <div class="lead-title">
       </div>
-      <div class="sub-lead-title" style="color: #41257F; font-weight: bold;"> {% if user.is_authenticated %}
-        Hi {{ user.username }}!
+      <div class="sub-lead-title" style="color: #41257F; font-weight: bold;">
+        Welcome
         <div class="lead-btn">INTERACTIVE GAME
         </div>
-      {% else %}
-        <p>You are not logged in</p>
-        <div class="lead-btn" onclick= "location.href='/accounts/login'">Login</div>
-      {% endif %}
       </div>
       <div>
         <p class="text">Security in your own hands</p>
