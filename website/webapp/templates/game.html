@@ -17,14 +17,15 @@
     </nav>
     <div class="clearfix">
     </div>
-      <div class="lead-title" style="width: 500px; font-weight: bold;">CyberShield <br>Awareness Game
+      <div class="lead-title" style="width: 500px; font-weight: bold;">CyberShield <br>Simulation Game
       </div>
     </div>
   </div>
 </header>
-<section class="flex-sect">
+<section class="flex-sect" style="background-color: #818181;">
     <div class="container-width" id="ifju" style="text-align: center;">
-        <div style="width: 900px; height:100px; display: inline-block; border: solid; text-align: center;" id="meterContainer">
+        <div style="width: 900px; height:150px; display: inline-block; border: solid #222222; text-align: center; background-color: #222222;" id="meterContainer">
+            <span class="close" style="padding-right: 10px; cursor: normal;" onclick="location.href='/'">&times;</span>
             <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
             <meter max="20" class="meter" id="scoreMeter">
                 <style>
@@ -61,34 +62,141 @@
                 </style>
             </meter>
             <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
+            <br>
+            <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
+            <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
         </div>
-        <div style="width: 900px; height:800px; display: inline-block; border: solid;" id="gameContainer">
-            <div style="width: 700px; height:150px; display: block; border: solid; margin: 0 auto; margin-top: 50px;" id="questionContainer">
+        <div style="width: 900px; height:700px; display: inline-block; border: solid #222222; background-color: #fafafa;" id="gameContainer" >
+            <div style="width: 700px; height:150px; display: block; margin: 0 auto; margin-top: 50px;" id="questionContainer">
                 <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
-                
                 </div>
             </div>
-            <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px;" id="answerContainer">
+            <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px; background-color: #c7c7c7; border-radius: 10px;" id="answerContainer">
                 <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
                 </div>
                 <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
                 </div>
-                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="3">     
                 </div>
             </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="width: 900px; height: 700px; border: solid #222222; background-color: #fafafa; display: inline-block; text-align: center; border-radius: 40px;">
+            <h1 style="color: #41257F;">How security conscious are you?</h1>
+            <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block; width:600px;">
+                <br>
+                <br>
+                <thead>
+                  <tr>
+                      <td style="width: 100px;"> <img src="{% static 'webapp/static/insecure.png' %}" style="width: 50px; height: 50px;"></td>
+                      <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">Low Security Awareness:</b> Our Cyber Security
+                        simulation has indicated that you have a low awareness regarding security and its practices. It is essential for both
+                        you and your information's safety that you develop practices that will protect your information. It is recommended that you have a 
+                        read through the articles listed in CyberShield's Sec-Library to get started!
+                      </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;"> <img src="{% static 'webapp/static/information.png' %}" style="width: 50px; height: 50px;"></td>
+                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">Average Security Awareness:</b> Our simulation has indicated that
+                        you have an average awareness of Cyber Security issues and practices. Although you engage in some good practices (good job!) there are still
+                        some things that you will need to be aware of. No fear, have a read through our Cyber Security News on our home page to ensure you are up
+                        to date with all things security!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;"> <img src="{% static 'webapp/static/ylock.png' %}" style="width: 50px; height: 50px;"></td>
+                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">High Security Awareness</b> You are above average in your awareness!
+                        Keep on practicing strong passwords and developing practices that will keep you safe online in these times of crisis. To improve why don't you try out our
+                        Email Checking tool to ensure that none of your email addresses have been leaked through any data breaches!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 100px;"> <img src="{% static 'webapp/static/trophy.png' %}" style="width: 50px; height: 50px;"></td>
+                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">CyberShield Security Awareness Expert</b> Congratulations! Our simulation
+                        has indicated that you are a Top Notch security awareness expert! But your journey in security does not end here... why not explore the security field further?
+                        Websites such as <a href="https://bugsbounty.com/" target="_blank">Bugs Bounty</a> and <a href="https://application.security/free-application-security-training">Contra</a>
+                        are good places to start!
+                    </td>
+                  </tr>
+                </thead>
+              </table>
         </div>
     </div>
     <script>
 
         function disappear() {
             document.getElementById('breachwarning').style.display = 'none';
+            
+            if(counter==20) {
+                complete();
+                document.getElementById('close').onclick = function() {
+                    document.getElementById('nobreach').style.display = 'none';
+                    lock();
+                }
+            }
         }
 
         function disappearNoBreach() {
             document.getElementById('nobreach').style.display = 'none';
+
+            if(counter==20) {
+                complete();
+                document.getElementById('close').onclick = function() {
+                    document.getElementById('nobreach').style.display = 'none';
+                    lock();
+                }
+            }
+        }
+
+        function correct() {
+            document.getElementById('nobreach').style.display='block';
+            document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
+
+            counter++;
+            question.innerHTML = data.questions[counter]['question'];
+            ansOne.innerHTML = data.questions[counter]['choiceOne'];
+            ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+            ansThr.innerHTML = data.questions[counter]['choiceThree'];
+            counterScore = counterScore + 1;
+
+            document.getElementById('scoreMeter').value = counterScore;
+            document.getElementById('points').innerHTML = counterScore;
+        }
+
+        function incorrect() {
+            document.getElementById('breachwarning').style.display='block';
+            document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
+
+            counter++;
+
+            question.innerHTML = data.questions[counter]['question'];
+            ansOne.innerHTML = data.questions[counter]['choiceOne'];
+            ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+            ansThr.innerHTML = data.questions[counter]['choiceThree'];
+
+            if(counterScore > 0) {
+                counterScore = counterScore - 1;
+            }
+
+            document.getElementById('scoreMeter').value = counterScore;
+            document.getElementById('points').innerHTML = counterScore;
+        }
+
+        function complete() {
+            document.getElementById('nobreach').style.display='block';
+            document.getElementById('heading').innerHTML = "Congratulations!"
+            document.getElementById('correctFeedback').innerHTML = "You have completed the CyberShield Security Simulation! Keep checking-in for future updates!"
+        }
+
+        function lock() {
+            ansOne.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+            ansTwo.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+            ansThr.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+            question.style.textAlign='center';
+            question.innerHTML= "<p style= \"font-size: 30px; color:#ffffff; display:inline-block\" class= \"standardText\">Check back regularly for updates!<p>";
         }
 
         var gameData = "{% static 'data.json' %}";
@@ -113,97 +221,27 @@
 
         ansOne.onclick = function() {
             if((data.questions[counter]['correctChoice']== 1) && (counter<20)) {
-                document.getElementById('nobreach').style.display='block';
-                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-                counterScore = counterScore + 1;
-
-                document.getElementById('scoreMeter').value = counterScore;
+                correct();
             } else {
-                document.getElementById('breachwarning').style.display='block';
-                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-
-                if(counterScore > 0) {
-                    counterScore = counterScore - 1;
-                }
-
-                document.getElementById('scoreMeter').value = counterScore;
+                incorrect();
             }
         }
 
         ansTwo.onclick = function() {
             if((data.questions[counter]['correctChoice']== 2) && (counter<20)) {
-                document.getElementById('nobreach').style.display='block';
-                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-                counterScore = counterScore + 1;
-
-                document.getElementById('scoreMeter').value = counterScore;
+                correct();
             } else {
-                document.getElementById('breachwarning').style.display='block';
-                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-
-                if(counterScore > 0) {
-                    counterScore = counterScore - 1;
-                }
-
-                document.getElementById('scoreMeter').value = counterScore;
+                incorrect();
             }
         }
 
         ansThr.onclick = function() {
             if((data.questions[counter]['correctChoice']== 3) && (counter<20)) {
-                document.getElementById('nobreach').style.display='block';
-                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-                counterScore = counterScore + 1;
-
-                document.getElementById('scoreMeter').value = counterScore;
+                correct();
             } else {
-                document.getElementById('breachwarning').style.display='block';
-                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
-
-                counter++;
-                question.innerHTML = data.questions[counter]['question'];
-                ansOne.innerHTML = data.questions[counter]['choiceOne'];
-                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-                ansThr.innerHTML = data.questions[counter]['choiceThree'];
-
-                if(counterScore > 0) {
-                    counterScore = counterScore - 1;
-                }
-
-                document.getElementById('scoreMeter').value = counterScore;
+                incorrect();
             }
         }
-        
     </script>
 </section>
 
@@ -221,11 +259,11 @@
   
   <div id="nobreach" class="modal">
     <div class="modal-header-nobreach">
-      <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;">&times;</span>
+      <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;" id="close">&times;</span>
     </div>
     <div class="modal-content">
       <div style="padding: 20px;">
-        <h2>Correct</h2>
+        <h2 id="heading">Correct</h2>
         <h3 id="correctFeedback"></h3>
       </div>
     </div>
