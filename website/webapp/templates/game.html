@@ -22,3 +22,211 @@
     </div>
   </div>
 </header>
+<section class="flex-sect">
+    <div class="container-width" id="ifju" style="text-align: center;">
+        <div style="width: 900px; height:100px; display: inline-block; border: solid; text-align: center;" id="meterContainer">
+            <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
+            <meter max="20" class="meter" id="scoreMeter">
+                <style>
+                    .meter {
+                        width: 600px;
+                        height: 70px;
+                    }
+    
+                    meter::-webkit-meter-bar {
+                    background: #fafafa;
+                    border: 3px solid #222222;
+                    }
+    
+                    meter[value="1"]::-webkit-meter-optimum-value { background: #DC402B; }
+                    meter[value="2"]::-webkit-meter-optimum-value { background: #DC402B; }
+                    meter[value="3"]::-webkit-meter-optimum-value { background: #E3562D; }
+                    meter[value="4"]::-webkit-meter-optimum-value { background: #E3562D; }
+                    meter[value="5"]::-webkit-meter-optimum-value { background: #E9802F; }
+                    meter[value="6"]::-webkit-meter-optimum-value { background: #E9802F; }
+                    meter[value="7"]::-webkit-meter-optimum-value { background: #F1AA31; }
+                    meter[value="8"]::-webkit-meter-optimum-value { background: #F1AA31; }
+                    meter[value="9"]::-webkit-meter-optimum-value { background: #F8D632; }
+                    meter[value="10"]::-webkit-meter-optimum-value { background: #F8D632; }
+                    meter[value="11"]::-webkit-meter-optimum-value { background: #E4F52E; }
+                    meter[value="12"]::-webkit-meter-optimum-value { background: #E4F52E; }
+                    meter[value="13"]::-webkit-meter-optimum-value { background: #CCF428; }
+                    meter[value="14"]::-webkit-meter-optimum-value { background: #CCF428; }
+                    meter[value="15"]::-webkit-meter-optimum-value { background: #B1EE21; }
+                    meter[value="16"]::-webkit-meter-optimum-value { background: #B1EE21; }
+                    meter[value="17"]::-webkit-meter-optimum-value { background: #98E71B; }
+                    meter[value="18"]::-webkit-meter-optimum-value { background: #98E71B; }
+                    meter[value="19"]::-webkit-meter-optimum-value { background: #6CDD17; }
+                    meter[value="20"]::-webkit-meter-optimum-value { background: #6CDD17; }
+                </style>
+            </meter>
+            <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
+        </div>
+        <div style="width: 900px; height:800px; display: inline-block; border: solid;" id="gameContainer">
+            <div style="width: 700px; height:150px; display: block; border: solid; margin: 0 auto; margin-top: 50px;" id="questionContainer">
+                <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
+                
+                </div>
+            </div>
+            <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px;" id="answerContainer">
+                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+                </div>
+                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+                </div>
+                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ipsum dolor sit
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function disappear() {
+            document.getElementById('breachwarning').style.display = 'none';
+        }
+
+        function disappearNoBreach() {
+            document.getElementById('nobreach').style.display = 'none';
+        }
+
+        var gameData = "{% static 'data.json' %}";
+        var request = new XMLHttpRequest();
+        request.open('GET', gameData, false);
+        request.send();
+        var data = JSON.parse(request.response);
+
+        var question = document.getElementById('question');
+        var feedback = document.getElementById('feedbackText');
+        var ansOne = document.getElementById('1');
+        var ansTwo = document.getElementById('2');
+        var ansThr = document.getElementById('3');
+
+        question.innerHTML = data.questions[0]['question'];
+        ansOne.innerHTML = data.questions[0]['choiceOne'];
+        ansTwo.innerHTML = data.questions[0]['choiceTwo'];
+        ansThr.innerHTML = data.questions[0]['choiceThree'];
+
+        var counter = 0;
+        var counterScore = 0;
+
+        ansOne.onclick = function() {
+            if((data.questions[counter]['correctChoice']== 1) && (counter<20)) {
+                document.getElementById('nobreach').style.display='block';
+                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+                counterScore = counterScore + 1;
+
+                document.getElementById('scoreMeter').value = counterScore;
+            } else {
+                document.getElementById('breachwarning').style.display='block';
+                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+
+                if(counterScore > 0) {
+                    counterScore = counterScore - 1;
+                }
+
+                document.getElementById('scoreMeter').value = counterScore;
+            }
+        }
+
+        ansTwo.onclick = function() {
+            if((data.questions[counter]['correctChoice']== 2) && (counter<20)) {
+                document.getElementById('nobreach').style.display='block';
+                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+                counterScore = counterScore + 1;
+
+                document.getElementById('scoreMeter').value = counterScore;
+            } else {
+                document.getElementById('breachwarning').style.display='block';
+                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+
+                if(counterScore > 0) {
+                    counterScore = counterScore - 1;
+                }
+
+                document.getElementById('scoreMeter').value = counterScore;
+            }
+        }
+
+        ansThr.onclick = function() {
+            if((data.questions[counter]['correctChoice']== 3) && (counter<20)) {
+                document.getElementById('nobreach').style.display='block';
+                document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+                counterScore = counterScore + 1;
+
+                document.getElementById('scoreMeter').value = counterScore;
+            } else {
+                document.getElementById('breachwarning').style.display='block';
+                document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
+
+                counter++;
+                question.innerHTML = data.questions[counter]['question'];
+                ansOne.innerHTML = data.questions[counter]['choiceOne'];
+                ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+                ansThr.innerHTML = data.questions[counter]['choiceThree'];
+
+                if(counterScore > 0) {
+                    counterScore = counterScore - 1;
+                }
+
+                document.getElementById('scoreMeter').value = counterScore;
+            }
+        }
+        
+    </script>
+</section>
+
+<div id="breachwarning" class="modal">
+    <div class="modal-header-breach">
+      <span class="close" onclick="disappear()" style="padding-right: 20px;">&times;</span>
+    </div>
+    <div class="modal-content">
+      <div style="padding: 20px;">
+        <h2>Incorrect</h2>
+        <h3 id="incorrectFeedback"></h3>
+      </div>
+    </div>
+  </div>
+  
+  <div id="nobreach" class="modal">
+    <div class="modal-header-nobreach">
+      <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;">&times;</span>
+    </div>
+    <div class="modal-content">
+      <div style="padding: 20px;">
+        <h2>Correct</h2>
+        <h3 id="correctFeedback"></h3>
+      </div>
+    </div>
+  </div>
