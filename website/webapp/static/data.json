@@ -1,164 +1,164 @@
 {
   "questions":[
      {
-        "question":"It is your first day at work, you are instructed by your manager to head to the IT department to pick up your work laptop and are notified about a compulsory cyber-awareness induction training for new hires later in the day.",
-        "choiceOne":"The IT guy also hands you over a folder that contains information about company security policies. You think this is sufficient and therefore do not attend the compulsory induction training",
-        "choiceTwo":"You follow as instructed and make sure that you attend the induction training to ensure you are not a victim of cyber attacks",
-        "choiceThree":"You ask your colleagues to sum up the event for you so you can avoid attending the event",
+        "question":"It is your first day at work and you are instructed by your manager to head to the IT department in order to pick up your corporate laptop. You are notified of the compulsory cyber-awareness training later in the day but your new colleagues have invited you out for lunch at the same time.",
+        "choiceOne":"You decide that getting to know your colleagues are more important as you need to work with them in the long term. Lunch it is.",
+        "choiceTwo":"You follow the instructions provided by your manager and attend the security awareness training to ensure you are not vulnerable to cyber attacks.",
+        "choiceThree":"You decide to ask your colleagues at lunch about the contents of the training instead; two birds and one stone",
         "correctChoice":"2",
-        "feedback":"It is important for management to brief all new hires about security and ensure they have an understanding of safe industry practices."
+        "feedback":"It is important for management to brief all new recruits on their security procedures and ensure that they have an understanding of the company's acceptable use and data safety policies."
      },
      {
-        "question":"You are given a set of credentials to login to your new laptop for the first time and are prompted to change the password. What do you do?",
+        "question":"You are given a set of credentials to login to your new laptop for the first time and is prompted to change the password. What do you do?",
         "choiceOne":"You create a new password and write it down on a sticky note so that you don’t forget it.",
-        "choiceTwo":"You change the password to something that you have been using for your whole life.",
-        "choiceThree":"You change the password to something unique (passwords should c, that includes a mixture of numbers, special characters and is a minimum of 9 characters",
+        "choiceTwo":"You change the password to something that you have been using for your whole life. There is no way hackers will know my great uncle's middle name...",
+        "choiceThree":"You change the password to something unique and include a mixture of numbers, special characters and a minimum of 8 characters.",
         "correctChoice":"3",
         "feedback":"With the current need for an efficient “work from home” environment for employees, password management is of the utmost importance as you will find yourself logging into multiple company applications, servers and browsers on a daily basis. Ensure all passwords are unique, a minimum of 8 characters long and include a mixture of lower-case and upper-case letters, numbers and symbols. Keep passwords secure and confidential by changing it on your first log-in and not keeping a physical or electronic record of it."
      },
      {
-        "question":"As a result of the COVID-19 pandemic, it is no longer safe for you to work on site. As a result, you are now required to work from home. What are your plans?",
-        "choiceOne":"You plan to set up your workspace in the dining area of your shared apartment, with the possibility of your roommates seeing sensitive data.",
-        "choiceTwo":"You set up a desk in your bedroom and connect to your encrypted home WI-FI network.",
-        "choiceThree":"You plan to use the public Wi-Fi of the library next door as it is stronger.",
+        "question":"As a result of the COVID-19 pandemic, it is no longer safe for you to work on site. As a result, you are now required to work from home and will need to plan out how you perform your tasks. To set up, what are your plans?",
+        "choiceOne":"You plan to set up your workspace in the dining area of your shared apartment, where your room-mates regularly eat their meals.",
+        "choiceTwo":"You set up a desk in your bedroom and connect to your secure home WI-FI network.",
+        "choiceThree":"You plan to use the public Wi-Fi of the library next door as it is stronger and has a download speed for 100mb/s.",
         "correctChoice":"2",
-        "feedback":"Ensure your work and personal devices are separated as this will reduce the chance of typing in sensitive information on the wrong device. Keep your work laptop in a secure location so that other people do not have access to your devices. If you need to use WIFI, ensure that you use an encrypted WIFI network with a strong password so they cannot be exploited by hackers to access your computer."
+        "feedback":"When working at home, you should  ensure that you have a dedicated workspace that is seperated from distractions. As unlikely as it is, your room-mates could peform a Shoulder Surfing attack where they look over your shoulder to obtain confidential information. Public WI-FI's are often insecure and in general, would be advised against for work."
      },
      {
-        "question":"You have just started working from home and received the following email from a strange address.",
-        "choiceOne":"Forward the link to the IT team to verify the link. It is important to not click on any unfamiliar links",
-        "choiceTwo":"Follow all the instructions as asked",
-        "choiceThree":"Ask your colleagues about receiving the link and proceed if they have already clicked on the link",
+        "question":"You have just started working from home and received the following email from the address c0vid19@g0v.au.'YOU HAVE BEEN IN CONTACT WITH COVID - CLICK THIS LINK TO SEE YOUR TEST",
+        "choiceOne":"Forward the email to the IT team to verify the link. It is important to not click on any unfamiliar links as they could contain malware.",
+        "choiceTwo":"Follow all the instructions as asked - I hope it is a false alarm. ",
+        "choiceThree":"Ask your colleagues about the email and proceed if they have already clicked on the link too.",
         "correctChoice":"1",
-        "feedback":"This is a phishing email scam. Clicking on this will install malicious software onto your device. As a user, you can hover over it to see the URL. Either way, if there is any reason for suspicion, you should contact IT"
+        "feedback":"This is a phishing email scam. Clicking on this will install malicious software onto your device. As a user, you can hover over it to see the URL. Either way, if there is any reason for suspicion, you should contact IT or the Security Response department for clarification."
      },
      {
-        "question":"Your colleague David Hwang thinks he is funny. He often sends links to memes via work email. The link is shorturl.at/giqS0",
-        "choiceOne":"Avoid clicking on any suspicious links at all",
-        "choiceTwo":"You forward the link to a colleague and make them check if it is safe first",
-        "choiceThree":"You check if your device has antivirus software, if so, proceed to the link",
+        "question":"Your colleague David Hwang thinks he is funny and often sends links to memes via his work email to the team. Another one of his knee-slapping memes has entered your emails with the link shorturl.at/giqS0.",
+        "choiceOne":"Avoid clicking on any suspicious links at all. As funny as they are, who knows what could lie on those meme sites.",
+        "choiceTwo":"You forward the link to a colleague and make them check if it is safe first.",
+        "choiceThree":"You check if your device has antivirus software, if so, proceed to click the link.",
         "correctChoice":"1",
-        "feedback":"Important to follow safe browsing rules set by the company. Always cautious with shortened URLs. Regardless of antivirus software, there is still a chance for spyware to be installed and put confidential data at risk."
+        "feedback":"Although a bit of fun should never be discouraged in work, it is important that your colleague David abides by the company's accepable use policy. Always be cautious with shortened URLs as regardless of antivirus software, there is still the chance for spyware to be installed and compromise confidential data."
      },
      {
         "question":"You receive an email in your work inbox from AUSPOST that wants you to download information about a parcel that belongs to you. What do you do?",
-        "choiceOne":"Download the zip file. You can’t wait to see what online shopping package has arrived!",
+        "choiceOne":"Download the zip file. You can’t wait to see the results of your online shopping while you are at home.",
         "choiceTwo":"You are suspicious but decide to download the file anyway to check it out.",
-        "choiceThree":"You are not expecting a package and report the suspicious email to your company IT department.",
+        "choiceThree":"Although you are expecting a package and you decide to report the email to your company's IT department to check first.",
         "correctChoice":"3",
-        "feedback":"This is a malware attack. Do not download any files unless they have been subject to an antivirus check and are approved from your company IT department. If you receive any suspicious emails, report them to IT so they can protect other people from being attacked."
+        "feedback":"This is a malware attack. Do not download any files unless they have been subjected to an antivirus check and are approved by your company's IT department. If you receive any suspicious emails, it is important to report it to IT as they can ensure others are not affected too."
      },
      {
         "question":"You are completing a work project and need to create some mock-ups and UI/UX designs. You want to use Adobe XD but can’t afford a license. Your friend has acquired a version he can share with you. What do you do?",
-        "choiceOne":"Install it to maximise the quality of your designs, it’s worth the risk.",
+        "choiceOne":"Install it to maximise the quality of your designs, it’s worth the risk, you are 1 project from a promotion.",
         "choiceTwo":"No problem, your antivirus is always on.",
-        "choiceThree":"Look for other free design applications you could use.",
+        "choiceThree":"Reach out to your IT department to enquire whether or not there are any approved alternatives, if so have them install it for you.",
         "correctChoice":"3",
-        "feedback":"By not using licensed software, you risk the software not functioning correctly or infecting your laptop if it is a pirated copy. Antivirus software is important but cannot provide 100% protection. You should look for other options."
+        "feedback":"By not using licensed software, you risk the software not functioning correctly or being a Trojan. Antivirus software is important but cannot provide 100% protection. Companies often have a list of approved software that is provisioned for employees to complete their work."
      },
      {
-        "question":"Your colleague sends you a link to a new app to help improve productivity for your work android phone during quarantine.",
-        "choiceOne":"Let your colleague know that he should not be sharing his credentials",
-        "choiceTwo":"Download the app without making sure it is safe and proceed to test it.",
-        "choiceThree":"Avoid downloading any app that hasn’t been approved by the company",
+        "question":"Your colleague sends you a link to a new app for your android phone to help you improve your productivity for work, however it requires you to sign in with your work credentials. ",
+        "choiceOne":"Ask your colleague to send you a demonstration of what you can do with the new app.",
+        "choiceTwo":"Download the app and test it out yourself.",
+        "choiceThree":"Avoid downloading any app as it may not have been approved by the organisation under their list of usable sofware.",
         "correctChoice":"3",
-        "feedback":"There can be malicious viruses within some apps to steal confidential information. Only download apps that have been approved by your company. If you aren’t sure the first step would be to check with the IT department."
+        "feedback":"There can be malicious viruses within some apps to steal confidential information. Only download apps that have been approved by your company; these are normally distrbuted by your company's own software library. If you aren’t sure, the first step would be to check with the IT department."
      },
      {
-        "question":"You decide to get a new android mobile phone which will also be used for work. You need to dispose of this device, but it contains sensitive data. How will you ensure the data does not get into the wrong hands?",
-        "choiceOne":"Hand it over to the IT department at work so they can properly get rid of any confidential data on the device to prevent it getting in the wrong hands",
-        "choiceTwo":"Manually search and delete any files that contains sensitive data",
-        "choiceThree":"Do a factory reset and donate it to charity",
+        "question":"You decide to get a new android mobile phone which will be used for work. You need to dispose of your old device, but it contains sensitive data. How will you ensure the data does not get into the wrong hands?",
+        "choiceOne":"Hand it over to the IT department at work so they can properly remove any confidential data on the device to prevent it from getting in the wrong hands.",
+        "choiceTwo":"Manually search and delete any files that contains sensitive data, you can finish this in less than 10 minutes!",
+        "choiceThree":"Do a factory reset and donate it to charity. Factory resets should do the trick in the most convenient way.",
         "correctChoice":"1",
-        "feedback":"Data can only be entirely destroyed using specialist software which the IT department will have. There is no guarantee with a factory reset."
+        "feedback":"Some data can only be destroyed using specialist software which the IT department will have. There is no guarantee that a factory reset will remove some application specific data."
      },
      {
         "question":"You are having issues logging in to your work laptop with your current password and call IT to help you. The IT support person sounds confused about your situation and asks for your password so he can test it on his device.",
-        "choiceOne":"You give it to him so that he can assist you as soon as possible.",
-        "choiceTwo":"You don’t want to reveal your password so you ask for someone else in IT to help you that might know more about password resets as giving out your password is never a good idea",
+        "choiceOne":"You give it to him so that he can assist you as soon as possible - the project isn't going to complete itself.",
+        "choiceTwo":"You don’t want to reveal your password so you ask for someone else in team to assist you who may be more knowledgable about the process. Giving out your password is never a good idea",
         "choiceThree":"You don’t want to say your password out loud as your roommate is in the next room. You send it in a private message to the IT support person.",
         "correctChoice":"2",
-        "feedback":"Never share your passwords with anyone, even IT support, as this could compromise the security of your account and increase the chance of malicious attacks."
+        "feedback":"Never share your passwords with anyone, even IT support, as this could compromise the security of your account and increase the chance of malicious attacks. A general rule of thumb is that IT individuals would never ask for your password."
      },
      {
-        "question":"You receive an email that someone has been trying to access your account from a different device. What do you do?",
-        "choiceOne":"Ignore the email because it might be an accident",
-        "choiceTwo":"Notify IT immediately so they can resolve the issue",
+        "question":"You receive a notification that someone has been trying to access your account from a different device. What do you do?",
+        "choiceOne":"Ignore the email because it might have been an accident - your name often gets mistaken for your CFO's",
+        "choiceTwo":"Notify IT immediately so that they can ensure the security of your account. ",
         "choiceThree":"No problem, you have antivirus software so there is no way someone could have obtained your credentials",
         "correctChoice":"2",
-        "feedback":"The best course of action would be to notify IT immediately. It is also important to change your password as soon as possible."
+        "feedback":"The best course of action would be to notify IT immediately. You likely be asked by the department to change your password after they have done the appropriate checks."
      },
      {
-        "question":"You are required to head back in the office for a few hours for urgent work matters and find a USB near the entrance of the building. What do you do?",
+        "question":"You are required to head back into office for a few hours to attend to urgent work matters and find a USB near the entrance of the building. You recognise that the USB resembles that used by your manager. What do you do?",
         "choiceOne":"Pick up the USB and plug it into your work laptop to find out who it may belong to.",
-        "choiceTwo":"Ignore the USB as it may contain malicious software",
-        "choiceThree":"Hand it over to a colleague so they can check it on their own device",
+        "choiceTwo":"Pick up this USB and deliver it to the IT specialists so that they can double check it.",
+        "choiceThree":"You leave the USB alone, who knows what software could be on that USB?",
         "correctChoice":"2",
-        "feedback":"It is possible for hacks to spread malware through a USB. Therefore, it is best that you avoid picking up random USB devices."
+        "feedback":"Baiting attacks occur when attackers make use of a physical medium like a USB to distribute malicious software. The victim often inserts the USB out of curriosity and can have disastrous consquences. Leaving the USB, however could risk a data breach if it indeed belonged to an employee. "
      },
      {
-        "question":"Cyber-security awareness is a major focus at your company. You notice your colleagues sending each other links that are unrelated to work",
-        "choiceOne":"Ignore these incidents and ensure that you are following safe cyber practices",
-        "choiceTwo":"Help educate your colleagues the importance of following safe practices and the risk of clicking on unfamiliar links",
-        "choiceThree":"You click on the link and join in on the fun",
+        "question":"Cyber-security awareness is a major focus at your company. You often notice your colleagues sending each other links that are unrelated to work.",
+        "choiceOne":"Ignore these incidents and ensure that you are following safe cyber practices.",
+        "choiceTwo":"Help educate your colleagues the importance of following safe practices and the risk of clicking on unfamiliar links.",
+        "choiceThree":"You click on the link and join in on the fun. David isn't the only comedian in this division.",
         "correctChoice":"2",
-        "feedback":"It is important to take initiative and help raise awareness about safe cyber practices."
+        "feedback":"It is important to take initiative and help raise awareness about safe cyber practices. Reporting incidents can be crucial to initiating an investigation if security incidents do occur."
      },
      {
-        "question":"You are currently working from home and receive an email from an unfamiliar address stating that your partner was in a workplace with an attached file that supposedly contains the details. What do you do?",
-        "choiceOne":"Don’t click on the file as it may contain malicious software",
-        "choiceTwo":"Click on the file to check",
-        "choiceThree":"Forward it to your personal email so you can check it on another device even though the file may contain malicious software",
+        "question":"While IT was remotely accessing your laptop to fix your ongoing network issues, they logged in with the administrator account and forgot to logout. What do you do?",
+        "choiceOne":"After your issue is fixed, log out of the administrator account for IT.",
+        "choiceTwo":"Administrator priveleges -> access to that locked file that you need to complete your project. This should speed up the delivery date.",
+        "choiceThree":"Lock the computer until the end of the day to ensure that no one else is able to use the account.",
         "correctChoice":"1",
-        "feedback":"It is important to avoid downloading files from unrecognisable files as it can contain malicious software."
+        "feedback":"Using administrator priveleges when it is not  assigned to your role could be a serious breach of company policy... Only use elevated-access accounts if approved and required to do so."
      },
      {
-        "question":"Your family member asks how they can better protect it from malicious attacks to ensure the safety of the new device.",
-        "choiceOne":"Tell them to install anti-virus software and ensure that they self-update",
-        "choiceTwo":"Recommend to only visit popular websites",
-        "choiceThree":"Tell them to figure it out themselves",
+        "question":"Your family member asks you how they can better protect themselves from malicious activities to ensure the safety of their new device. What do you do?",
+        "choiceOne":"Tell them to install anti-virus software and ensure that they have the self-update option checked when they install it.",
+        "choiceTwo":"Recommend them to have a read of the security blog you found online.",
+        "choiceThree":"Tell them to figure it out themselves... Time to get them back for eating your KFC.",
         "correctChoice":"1",
-        "feedback":"It is important to have the latest version of anti-virus software and a site being popular is not an implication that it is secure"
+        "feedback":"It is important to have anti-virus software and ensure that it is up to date. A security blog may provide alternatives, but is no way an indication that their recommendations are completely secure."
      },
      {
-        "question":"You have been feeling under the weather and are unable to work. You ask a colleague to set an out of office reply. He also adds that anyone needing an urgent reply should contact him. Which do you agree with?",
-        "choiceOne":"It is best to call your supervisor to handle this",
-        "choiceTwo":"You should not be handing your credentials to anyone",
-        "choiceThree":"You trust your colleague with your credentials as you have known him for a while",
+        "question":"You have been feeling under the weather and are unable to work. You ask your colleague to Anu to set up your out of office reply. He has proposed to also include that he is the point of contact while you are away. Should you proceed?",
+        "choiceOne":"You decide that your manager would be better to set up your out of office message and contact him instead.",
+        "choiceTwo":"On second thought, you should not hand over your credentials to anyone. I tell Anu to have a good day and set the out of office yourself.",
+        "choiceThree":"You trust Anu with your credentials as you have known him for a while.",
         "correctChoice":"2",
-        "feedback":"Regardless of position, it is important to not hand out your credentials to anyone. Procedures should be followed"
+        "feedback":"Regardless of position, it is important not to hand out your credentials to anyone. Procedures should always be followed and actions with your account should be done yourself."
      },
      {
-        "question":"Today you will be working in the office. You notice that a member from your team has their computer unlocked. What do you do?",
-        "choiceOne":"Play a prank and change their background",
-        "choiceTwo":"You lock their session and wait for them to return to notify them",
-        "choiceThree":"You go through their computer without permission",
+        "question":"Today you will be working in the office. You notice that a David from your team has their computer unlocked. What do you do?",
+        "choiceOne":"Play a prank and change their background. Time to get him back for the time he embarrassed you during a presentation.",
+        "choiceTwo":"You lock their session and wait for them to return to notify them.",
+        "choiceThree":"You shut down their computer to ensure no one can access their device without their permission.",
         "correctChoice":"2",
-        "feedback":"It is risky to have an unlocked workstation unattended. This can be a threat to the company network. Do not shut down the computer as files may be lost"
+        "feedback":"It is risky to have an unlocked workstation unattended as it provides attackers a method of accessing the internal network. Shutting down their device could result in their work not being saved and would be the incorrect decision."
      },
      {
-        "question":"You have forgotten your password and you are struggling to reset it. You turned to your colleague for help and they recommended for you to send your credentials so they can try it on their computer. What do you do?",
-        "choiceOne":"Send your credentials over to your colleague",
-        "choiceTwo":"Contact IT support because they would know how to reset your password",
-        "choiceThree":"Give up and quit your job",
+        "question":"Your team has hired an auditor to check whether or not the website which your team manages is compliant with the legal regulations. The auditor has asked you to login so that they can audit the site. What do you do?",
+        "choiceOne":"Login to the website but watch him as he performs the audit to ensure he is not doing anything dodgy.",
+        "choiceTwo":"Send an email to your manager requesting approval for the auditor to access the site.",
+        "choiceThree":"Refuse to provide the auditor your credentials and carry on with your own work.",
         "correctChoice":"2",
-        "feedback":"You should never hand over your credentials to anyone, even IT support."
+        "feedback":"Contractors and auditors will most likely have the approval to access what they require. However, this is normally done through an account created for them specifically for that purpose that is locked down securely."
      },
      {
-        "question":"You have to work over the weekend on an important project, unfortunately your remote access no longer works, and it is too late to contact IT support, what do you do?",
-        "choiceOne":"You give up and don’t work at all",
-        "choiceTwo":"Head into the office over the weekend if it is safe to do so",
-        "choiceThree":"You ask your colleague for their credentials so you can log in from your device",
+        "question":"You have to work over the weekend on an important project, unfortunately your remote access no longer works, and it is too late to contact IT support. What do you do?",
+        "choiceOne":"You give up and don’t work at all. It is what it is.",
+        "choiceTwo":"You call up the security office and ask if the site is open on the weekend.",
+        "choiceThree":"You ask your colleague for their credentials so you that you can log in from your device",
         "correctChoice":"2",
-        "feedback":"It is important to not risk the security of company data so you should check if the office is open over the weekend"
+        "feedback":"Using another individual's credentials is against many acceptable use policies. It may be best to see if you can work onsite or contact your manager for alternatives."
      },
      {
-        "question":"It is almost the end of the day and you notice strange alerts appearing on your work laptop. What do you do?",
-        "choiceOne":"Ignore it because you are almost finished work for the day.",
-        "choiceTwo":"Notify IT as soon as you notice it, and do it grant access to any of these alerts as it may be a malicious attack",
-        "choiceThree":"Grant access to the alert, your device should be safe anyways because anti-virus software has been installed",
+        "question":"It is your last day on the job and you need to hand back your laptop. You gained experience working here and would like to save some of the work you have done to use in the portfolio for your next job. Do you proceed?",
+        "choiceOne":"Transfer all the examples of your work and make the best possible portfolio that you can use. You are definitely hot on the market now!",
+        "choiceTwo":"Confirm with your manager that the work you extract is not confidential and do not have any data related to business operations.",
+        "choiceThree":"You hand back the laptop without extracting any examples of your work. You are sure you can still get hired elsewhere.",
         "correctChoice":"2",
-        "feedback":"The best thing to do is to notify IT straight away and avoid granting access to unfamiliar software."
+        "feedback":"There is nothing wrong with obtaining examples of your work. However it is important to check with IT and your manager that it does not breach any confidentiality or policy requirements."
      }
   ]
 }

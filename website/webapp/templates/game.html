@@ -24,51 +24,62 @@
 </header>
 <section class="flex-sect" style="background-color: #818181;">
     <div class="container-width" id="ifju" style="text-align: center;">
-        <div style="width: 900px; height:150px; display: inline-block; border: solid #222222; text-align: center; background-color: #222222;" id="meterContainer">
-            <span class="close" style="padding-right: 10px; cursor: normal;" onclick="location.href='/'">&times;</span>
-            <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
-            <meter max="20" class="meter" id="scoreMeter">
-                <style>
-                    .meter {
-                        width: 600px;
-                        height: 70px;
-                    }
-    
-                    meter::-webkit-meter-bar {
-                    background: #fafafa;
-                    border: 3px solid #222222;
-                    }
-    
-                    meter[value="1"]::-webkit-meter-optimum-value { background: #DC402B; }
-                    meter[value="2"]::-webkit-meter-optimum-value { background: #DC402B; }
-                    meter[value="3"]::-webkit-meter-optimum-value { background: #E3562D; }
-                    meter[value="4"]::-webkit-meter-optimum-value { background: #E3562D; }
-                    meter[value="5"]::-webkit-meter-optimum-value { background: #E9802F; }
-                    meter[value="6"]::-webkit-meter-optimum-value { background: #E9802F; }
-                    meter[value="7"]::-webkit-meter-optimum-value { background: #F1AA31; }
-                    meter[value="8"]::-webkit-meter-optimum-value { background: #F1AA31; }
-                    meter[value="9"]::-webkit-meter-optimum-value { background: #F8D632; }
-                    meter[value="10"]::-webkit-meter-optimum-value { background: #F8D632; }
-                    meter[value="11"]::-webkit-meter-optimum-value { background: #E4F52E; }
-                    meter[value="12"]::-webkit-meter-optimum-value { background: #E4F52E; }
-                    meter[value="13"]::-webkit-meter-optimum-value { background: #CCF428; }
-                    meter[value="14"]::-webkit-meter-optimum-value { background: #CCF428; }
-                    meter[value="15"]::-webkit-meter-optimum-value { background: #B1EE21; }
-                    meter[value="16"]::-webkit-meter-optimum-value { background: #B1EE21; }
-                    meter[value="17"]::-webkit-meter-optimum-value { background: #98E71B; }
-                    meter[value="18"]::-webkit-meter-optimum-value { background: #98E71B; }
-                    meter[value="19"]::-webkit-meter-optimum-value { background: #6CDD17; }
-                    meter[value="20"]::-webkit-meter-optimum-value { background: #6CDD17; }
-                </style>
-            </meter>
-            <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
-            <br>
-            <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
-            <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
-        </div>
+      <div style="width: 700px; height: 150px; border: solid #222222; background-color: #41257F; display: inline-block; text-align: center; border-radius: 40px;">
+        <p class="standardText" style="padding: 20px; text-align: center; display: inline-block; width: 700px; color: #ffffff; font-weight: bolder; line-height: 20px;"> 
+          The CyberShield Simulation game is a way for individuals to be put in a situational
+          circumstances that assess their decisions in a security context. 
+          This game allows them to experiment and understand the consquences of their actions, ensure that mistakes made here are not made in real life.
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="width: 900px; height:150px; display: inline-block; border: solid #222222; text-align: center; background-color: #222222;" id="meterContainer">
+          <span class="close" style="padding-right: 10px; cursor: normal;" onclick="location.href='/'">&times;</span>
+          <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
+          <meter max="20" class="meter" id="scoreMeter">
+              <style>
+                  .meter {
+                      width: 600px;
+                      height: 70px;
+                  }
+  
+                  meter::-webkit-meter-bar {
+                  background: #fafafa;
+                  border: 3px solid #222222;
+                  }
+  
+                  meter[value="1"]::-webkit-meter-optimum-value { background: #DC402B; }
+                  meter[value="2"]::-webkit-meter-optimum-value { background: #DC402B; }
+                  meter[value="3"]::-webkit-meter-optimum-value { background: #E3562D; }
+                  meter[value="4"]::-webkit-meter-optimum-value { background: #E3562D; }
+                  meter[value="5"]::-webkit-meter-optimum-value { background: #E9802F; }
+                  meter[value="6"]::-webkit-meter-optimum-value { background: #E9802F; }
+                  meter[value="7"]::-webkit-meter-optimum-value { background: #F1AA31; }
+                  meter[value="8"]::-webkit-meter-optimum-value { background: #F1AA31; }
+                  meter[value="9"]::-webkit-meter-optimum-value { background: #F8D632; }
+                  meter[value="10"]::-webkit-meter-optimum-value { background: #F8D632; }
+                  meter[value="11"]::-webkit-meter-optimum-value { background: #E4F52E; }
+                  meter[value="12"]::-webkit-meter-optimum-value { background: #E4F52E; }
+                  meter[value="13"]::-webkit-meter-optimum-value { background: #CCF428; }
+                  meter[value="14"]::-webkit-meter-optimum-value { background: #CCF428; }
+                  meter[value="15"]::-webkit-meter-optimum-value { background: #B1EE21; }
+                  meter[value="16"]::-webkit-meter-optimum-value { background: #B1EE21; }
+                  meter[value="17"]::-webkit-meter-optimum-value { background: #98E71B; }
+                  meter[value="18"]::-webkit-meter-optimum-value { background: #98E71B; }
+                  meter[value="19"]::-webkit-meter-optimum-value { background: #6CDD17; }
+                  meter[value="20"]::-webkit-meter-optimum-value { background: #6CDD17; }
+              </style>
+          </meter>
+          <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
+          <br>
+          <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
+          <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
+      </div>
         <div style="width: 900px; height:700px; display: inline-block; border: solid #222222; background-color: #fafafa;" id="gameContainer" >
             <div style="width: 700px; height:150px; display: block; margin: 0 auto; margin-top: 50px;" id="questionContainer">
-                <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
+                <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: 20px; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
                 </div>
             </div>
             <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px; background-color: #c7c7c7; border-radius: 10px;" id="answerContainer">
@@ -122,8 +133,8 @@
                     </td>
                   </tr>
                 </thead>
-              </table>
-        </div>
+            </table>
+          </div>
     </div>
     <script>
 
