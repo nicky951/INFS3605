@@ -76,6 +76,9 @@
           <br>
           <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
           <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
+          <br>
+          <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="current">0</label>
+          <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="twenty">/20</label>
       </div>
         <div style="width: 900px; height:700px; display: inline-block; border: solid #222222; background-color: #fafafa;" id="gameContainer" >
             <div style="width: 700px; height:150px; display: block; margin: 0 auto; margin-top: 50px;" id="questionContainer">
@@ -103,7 +106,7 @@
                 <thead>
                   <tr>
                       <td style="width: 100px;"> <img src="{% static 'webapp/static/insecure.png' %}" style="width: 50px; height: 50px;"></td>
-                      <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">Low Security Awareness:</b> Our Cyber Security
+                      <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">0 - 5 -> Low Security Awareness:</b> <br>Our Cyber Security
                         simulation has indicated that you have a low awareness regarding security and its practices. It is essential for both
                         you and your information's safety that you develop practices that will protect your information. It is recommended that you have a 
                         read through the articles listed in CyberShield's Sec-Library to get started!
@@ -111,7 +114,7 @@
                   </tr>
                   <tr>
                     <td style="width: 100px;"> <img src="{% static 'webapp/static/information.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">Average Security Awareness:</b> Our simulation has indicated that
+                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">5 - 10 -> Average Security Awareness:</b> <br>Our simulation has indicated that
                         you have an average awareness of Cyber Security issues and practices. Although you engage in some good practices (good job!) there are still
                         some things that you will need to be aware of. No fear, have a read through our Cyber Security News on our home page to ensure you are up
                         to date with all things security!
@@ -119,14 +122,14 @@
                   </tr>
                   <tr>
                     <td style="width: 100px;"> <img src="{% static 'webapp/static/ylock.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">High Security Awareness</b> You are above average in your awareness!
+                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">10 - 15 -> High Security Awareness:</b> <br>You are above average in your awareness!
                         Keep on practicing strong passwords and developing practices that will keep you safe online in these times of crisis. To improve why don't you try out our
                         Email Checking tool to ensure that none of your email addresses have been leaked through any data breaches!
                     </td>
                   </tr>
                   <tr>
                     <td style="width: 100px;"> <img src="{% static 'webapp/static/trophy.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px;"><b style="color: #41257F;">CyberShield Security Awareness Expert</b> Congratulations! Our simulation
+                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">15 - 20 -> CyberShield Security Awareness Expert:</b> <br>Congratulations! Our simulation
                         has indicated that you are a Top Notch security awareness expert! But your journey in security does not end here... why not explore the security field further?
                         Websites such as <a href="https://bugsbounty.com/" target="_blank">Bugs Bounty</a> and <a href="https://application.security/free-application-security-training">Contra</a>
                         are good places to start!
@@ -172,7 +175,8 @@
             ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
             ansThr.innerHTML = data.questions[counter]['choiceThree'];
             counterScore = counterScore + 1;
-
+            
+            document.getElementById('current').innerHTML = counter;
             document.getElementById('scoreMeter').value = counterScore;
             document.getElementById('points').innerHTML = counterScore;
         }
@@ -192,6 +196,7 @@
                 counterScore = counterScore - 1;
             }
 
+            document.getElementById('current').innerHTML = counter;
             document.getElementById('scoreMeter').value = counterScore;
             document.getElementById('points').innerHTML = counterScore;
         }
@@ -200,6 +205,7 @@
             document.getElementById('nobreach').style.display='block';
             document.getElementById('heading').innerHTML = "Congratulations!"
             document.getElementById('correctFeedback').innerHTML = "You have completed the CyberShield Security Simulation! Keep checking-in for future updates!"
+            document.getElementById('current').innerHTML="20"
         }
 
         function lock() {
