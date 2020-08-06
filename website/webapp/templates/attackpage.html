@@ -1,106 +1,101 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
-      </div>
+    <div class="container-width" id="ifju">
+        <div class="logo-container" id="io2t" onclick="location.href='/'">
+            <div class="logo"> Home
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+            </div>
+            <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+            </div>
+            <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
+            </div>
+        </nav>
+        <div class="clearfix">
+        </div>
+        <div class="lead-title" style="width: 500px; font-weight: bold;">Social Engineering Attacks
+        </div>
     </div>
-    <nav class="menu">
-      <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
-      </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
-      </div>
-      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
-    <div class="lead-title" style="width: 500px; font-weight: bold;">Social Engineering Attacks
-    </div>
-    </div>
-  </div>
 </header>
 <section class="flex-sect">
-  <div class="container-width">
-    <div style="text-align: center;">
-      <h1 style="color: #41257F;">Types of Social Engineering Attacks:</h1>
-      <p class="standardText">
-        The use of preventative measures such as firewalls and antiviruses can only be so helpful in protecting you from various viruses and malware. 
-        Social engineering attacks involve the psychological manipulation of individuals for malicious gain, hence it is vital to be aware of the different 
-        types of attacks prevalent in our current cyber security landscape.
-      </p>
-      <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block; width:800px;">
-        <thead>
-          <tr>
-              <td style="width: 100px;"> <img src="{% static 'webapp/static/fish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-              <td class="listtext"><b style="color: #41257F;">Phishing:</b> a fraudulent attempt to obtain confidential information through electronic information such as emails.</td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/sfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Spear Phishing:</b> targeting specific people/groups/organisations using falsified emails to obtain 
-              sensitive information and data.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/sefish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Search Phishing:</b> fraudulent websites appearing on legitimate search engines that trick individuals 
-              into sharing information.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/afish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Angler Phishing:</b> masquerading as a customer service agent targeting disgruntled customers to obtain 
-              personal information.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/whale.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Whaling:</b> a phishing attack aimed at CEOs and high-profile individuals for easier access to valuable company information.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/vfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Vishing:</b> fraudulent practice of making phone calls from reputable companies to gain personal and financial information.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/smfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Smishing:</b> fraudulent practice of sending text messages from reputable companies to gain personal and financial information.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/pretext.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Pretexting:</b> swindling individuals lying to vulnerable people to obtain their personal information - based on a false motive.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/bait.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Baiting:</b> using false promises to pique a victim’s curiosity and stealing information from physical mediums such as USBs.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/whole.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Watering Hole:</b> criminals targeting a specific group/organisation and infecting their websites with malware and viruses.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/rat.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Rat Attacks:</b> scammers convince users to install a Remote Access Tool on their device, allowing them to access their personal data.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/scare.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Scareware:</b> a type of malware which causes shock and anxiety in manipulating individuals to purchase unwanted software.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/quid.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Quid Pro Quo:</b> a technique in which an attacker requests confidential information in exchange for providing a service.
-            </td>
-          </tr>
-        </thead>
-      </table>
+    <div class="container-width">
+        <div style="text-align: center;">
+            <h1 style="color: #41257F;">Types of Social Engineering Attacks:</h1>
+            <p class="standardText">
+                The use of preventative measures such as firewalls and antiviruses can only be so helpful in protecting you from various viruses and malware. Social engineering attacks involve the psychological manipulation of individuals for malicious gain, hence it
+                is vital to be aware of the different types of attacks prevalent in our current cyber security landscape.
+            </p>
+            <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block; width:800px;">
+                <thead>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/fish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Phishing:</b> a fraudulent attempt to obtain confidential information through electronic information such as emails.</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/sfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Spear Phishing:</b> targeting specific people/groups/organisations using falsified emails to obtain sensitive information and data.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/sefish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Search Phishing:</b> fraudulent websites appearing on legitimate search engines that trick individuals into sharing information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/afish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Angler Phishing:</b> masquerading as a customer service agent targeting disgruntled customers to obtain personal information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/whale.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Whaling:</b> a phishing attack aimed at CEOs and high-profile individuals for easier access to valuable company information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/vfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Vishing:</b> fraudulent practice of making phone calls from reputable companies to gain personal and financial information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/smfish.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Smishing:</b> fraudulent practice of sending text messages from reputable companies to gain personal and financial information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/pretext.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Pretexting:</b> swindling individuals lying to vulnerable people to obtain their personal information - based on a false motive.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/bait.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Baiting:</b> using false promises to pique a victim’s curiosity and stealing information from physical mediums such as USBs.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/whole.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Watering Hole:</b> criminals targeting a specific group/organisation and infecting their websites with malware and viruses.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/rat.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Rat Attacks:</b> scammers convince users to install a Remote Access Tool on their device, allowing them to access their personal data.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/scare.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Scareware:</b> a type of malware which causes shock and anxiety in manipulating individuals to purchase unwanted software.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/quid.png' %}" style="width: 50px; height: 50px; padding: 10px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Quid Pro Quo:</b> a technique in which an attacker requests confidential information in exchange for providing a service.
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </div>
-  </div>
 </section>

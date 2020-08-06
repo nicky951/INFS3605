@@ -1,86 +1,79 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
-      </div>
+    <div class="container-width" id="ifju">
+        <div class="logo-container" id="io2t" onclick="location.href='/'">
+            <div class="logo"> Home
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+            </div>
+            <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+            </div>
+            <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
+            </div>
+        </nav>
+        <div class="clearfix">
+        </div>
+        <div class="lead-title" style="width: 500px; font-weight: bold;">Cyber @ Home
+        </div>
     </div>
-    <nav class="menu">
-      <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
-      </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
-      </div>
-      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
-    <div class="lead-title" style="width: 500px; font-weight: bold;">Cyber @ Home
-    </div>
-    </div>
-  </div>
 </header>
 <section class="flex-sect">
-  <div class="container-width">
-    <div style="text-align: center;">
-      <h1 style="color: #41257F;">Cyber@Home - Your Your One Stop Shop for Working from Home!</h1>
-      <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block;">
-        <thead>
-          <tr>
-              <td style="width: 100px;"> <img src="{% static 'webapp/static/house.png' %}" style="width: 50px; height: 50px;"></td>
-              <td class="listtext"><b style="color: #41257F;">WFH Physical Security:</b> The first so-obvious-it’s-not-obvious tip is to make  
-                sure your work devices are physically safe, and that you avoid offering unauthorized views of confidential information.
-              </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/twokey.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">System Access:</b> Access to your computer’s desktop should at least be password protected, 
-              and the password should be a strong one.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/devices.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Seperate work an personal devices:</b> It can be easy to get caught up in switching between devices 
-              during this time-period - but ensure that you are not typing in sensitive information on the wrong device!
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/globe.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Cyber Security best practices:</b> Be wary of phishing emails. There will be many going around trying 
-              to capitalize on fear related to the coronavirus, questions about isolation and its psychological impacts, or even pretending to offer 
-              advice or health information. Scan those emails with a sharp eye and do not open attachments unless they’re from a known, trusted source.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/chain.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Secure connections:</b> Make sure you have access to your organization’s cloud infrastructure and 
-              can tunnel in through a VPN with encryption.
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/list.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Other security precautions:</b> Make sure to get yourself up to speed with the guidelines that your organization has in place for remote work. 
-              Ask for directions if anything is unclear. Not everyone has the same level of tech savvy —- the only stupid question is one that isn’t asked.
-            </td>
-          </tr>
-        </thead>
-      </table>
-      <h1 style="color: #41257F;">This doesn't apply to me...I'm the best working from home!</h1>
-      <i class="standardText">(You might want to think again?)</i>
-    </div>
-    <div style="text-align: center;">
-      <p class="standardText">
-        According to Tessian's The State of Data Loss Report, some of the top reasons employees aren't completely following the same safe data practices as usual 
-        include working from their own device, rather than a company issued one, as well as feeling as if they can take additional risks because they're not being 
-        watched by IT and security.
-      </p>
-      <i class="standardText">"People will cut corners on security best practices when working remotely and find workarounds if security policies disrupt their 
+    <div class="container-width">
+        <div style="text-align: center;">
+            <h1 style="color: #41257F;">Cyber@Home - Your Your One Stop Shop for Working from Home!</h1>
+            <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block;">
+                <thead>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/house.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">WFH Physical Security:</b> The first so-obvious-it’s-not-obvious tip is to make sure your work devices are physically safe, and that you avoid offering unauthorized views of confidential information.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/twokey.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">System Access:</b> Access to your computer’s desktop should at least be password protected, and the password should be a strong one.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/devices.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Seperate work an personal devices:</b> It can be easy to get caught up in switching between devices during this time-period - but ensure that you are not typing in sensitive information on the wrong device!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/globe.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Cyber Security best practices:</b> Be wary of phishing emails. There will be many going around trying to capitalize on fear related to the coronavirus, questions about isolation and its psychological
+                            impacts, or even pretending to offer advice or health information. Scan those emails with a sharp eye and do not open attachments unless they’re from a known, trusted source.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/chain.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Secure connections:</b> Make sure you have access to your organization’s cloud infrastructure and can tunnel in through a VPN with encryption.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/list.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Other security precautions:</b> Make sure to get yourself up to speed with the guidelines that your organization has in place for remote work. Ask for directions if anything is unclear. Not everyone has
+                            the same level of tech savvy —- the only stupid question is one that isn’t asked.
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <h1 style="color: #41257F;">This doesn't apply to me...I'm the best working from home!</h1>
+            <i class="standardText">(You might want to think again?)</i>
+        </div>
+        <div style="text-align: center;">
+            <p class="standardText">
+                According to Tessian's The State of Data Loss Report, some of the top reasons employees aren't completely following the same safe data practices as usual include working from their own device, rather than a company issued one, as well as feeling as if
+                they can take additional risks because they're not being watched by IT and security.
+            </p>
+            <i class="standardText">"People will cut corners on security best practices when working remotely and find workarounds if security policies disrupt their 
         productivity in these new working conditions," said Tim Salder, CEO of Tessian.</i>
-        <br>
-        <br>
-        <br>
-      <img src="{% static 'webapp/static/covidhome.png' %}" style="width: 900; height: auto;"></img>
+            <br>
+            <br>
+            <br>
+            <img src="{% static 'webapp/static/covidhome.png' %}" style="width: 900; height: auto;">
+        </div>
     </div>
-  </div>
 </section>

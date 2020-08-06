@@ -1,248 +1,241 @@
 {% load static %}
 <script>
-  function checkFunction() {
-    load();
-    setTimeout(callRequest,1000);
-  }
-  function load() {
-    document.getElementById('loadingAnimation').style.display = 'block';
-  }
+    function checkFunction() {
+        load();
+        setTimeout(callRequest,1000);
+    }
+
+    function load() {
+        document.getElementById('loadingAnimation').style.display = 'block';
+    }
+    
+    function disappear() {
+        document.getElementById('breachwarning').style.display = 'none';
+    }
   
-  function disappear() {
-    document.getElementById('breachwarning').style.display = 'none';
-  }
-
-  function disappearNoBreach() {
-    document.getElementById('nobreach').style.display = 'none';
-  }
-
-  function callRequest() {
-    var email = document.getElementById('i25v').value;
-      
-      //get response via CORS proxy
-      var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
-
-      //for chrome users chrome://flags/#out-of-blink-cors bypass cors
-      //var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
-      var request = new XMLHttpRequest();
-      request.open('GET', jsonRequest, false);
-      request.setRequestHeader("hibp-api-key", "38eb580ec92d4403becca47370ac9d1f");
-      request.setRequestHeader("Access-Control-Allow-Origin", "*");
-      request.setRequestHeader("Content-Type", "application/json");
-      request.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
-      request.setRequestHeader("Access-Control-Allow-Headers", "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
-      request.send();
-      
-      var responseStatus = request.status;
-
-      if(responseStatus == 200) {
-        var result = JSON.parse(request.response);
-        var breachTable = document.getElementById('breachtable');
-
-        for(var i = 0; i < result.length; i++) {
-        var row = breachTable.insertRow(i + 1);
-        var newC1 = row.insertCell(0);
-        newC1.innerHTML = result[i]['Name'];
-        var newC2 = row.insertCell(1);
-        newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto;\">";
-        var newC3 = row.insertCell(2);
-        newC3.innerHTML = result[i]['BreachDate'];
-        var newC4 = row.insertCell(3);
-        newC4.innerHTML = result[i]['Description'];
+    function disappearNoBreach() {
+        document.getElementById('nobreach').style.display = 'none';
+    }
+  
+    function callRequest() {
+        var email = document.getElementById('i25v').value;
+        
+        //get response via CORS proxy
+        var jsonRequest = "https://cors-anywhere.herokuapp.com/https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+  
+        //for use if CORS proxy is down
+        //for chrome users chrome://flags/#out-of-blink-cors bypass cors
+        //var jsonRequest = "https://haveibeenpwned.com/api/v3/breachedaccount/" + email + "?truncateResponse=false";
+        var request = new XMLHttpRequest();
+        request.open('GET', jsonRequest, false);
+        request.setRequestHeader("hibp-api-key", "38eb580ec92d4403becca47370ac9d1f");
+        request.setRequestHeader("Access-Control-Allow-Origin", "*");
+        request.setRequestHeader("Content-Type", "application/json");
+        request.setRequestHeader("Access-Control-Allow-Methods", "GET, POST, PATCH, PUT, DELETE, OPTIONS");
+        request.setRequestHeader("Access-Control-Allow-Headers", "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method,Access-Control-Request-Headers, Authorization");
+        request.send();
+        
+        var responseStatus = request.status;
+  
+        if(responseStatus == 200) {
+            var result = JSON.parse(request.response);
+            var breachTable = document.getElementById('breachtable');
+  
+            for(var i = 0; i < result.length; i++) {
+                var row = breachTable.insertRow(i + 1);
+                var newC1 = row.insertCell(0);
+                newC1.innerHTML = result[i]['Name'];
+                var newC2 = row.insertCell(1);
+                newC2.innerHTML = "<img src=\"" + result[i]['LogoPath'] + "\" style = \"width: 100px; height: auto;\">";
+                var newC3 = row.insertCell(2);
+                newC3.innerHTML = result[i]['BreachDate'];
+                var newC4 = row.insertCell(3);
+                newC4.innerHTML = result[i]['Description'];
+            }
+  
+            document.getElementById('breachwarning').style.display = 'block';
+            document.getElementById('loadingAnimation').style.display = 'none';
+            document.getElementById('breachtable').style.visibility = 'visible';
+        } else {
+            document.getElementById('loadingAnimation').style.display = 'none';
+            document.getElementById('nobreach').style.display = 'block';
         }
-
-        document.getElementById('breachwarning').style.display = 'block';
-        document.getElementById('loadingAnimation').style.display = 'none';
-        document.getElementById('breachtable').style.visibility = 'visible';
-      } else {
-        document.getElementById('loadingAnimation').style.display = 'none';
-        document.getElementById('nobreach').style.display = 'block';
-      }
-  }
+    }
 </script>
 
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
-      </div>
+    <div class="container-width" id="ifju">
+        <div class="logo-container" id="io2t" onclick="location.href='/'">
+            <div class="logo"> Home
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+            </div>
+            <div class="menu-item" onclick="location.href='/emailchecker'" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;"> BREACH CHECKER
+            </div>
+            <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
+            </div>
+        </nav>
+        <div class="clearfix">
+        </div>
+        <div class="lead-title" style="width: 500px; font-weight: bold;">Patching Your Leak
+        </div>
     </div>
-    <nav class="menu">
-      <div class="menu-item" onclick="location.href='/game'" >AWARENESS GAME
-      </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;"> BREACH CHECKER
-      </div>
-      <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
-      <div class="lead-title" style="width: 500px; font-weight: bold;">Patching Your Leak
-      </div>
-    </div>
-  </div>
 </header>
-<br></br>
+<br>
 <section class="flex-sect">
-  <div class="container-width" id="ifju">
-    <div style="text-align: center;">
-      <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
-        The uncertainty of 2020 as a result of COVID19 has created an environment that has encouraged Cyber Crime to flourish.
-        With many attackers taking advantage of the world's vulnerable state, it is unsurprising that 2020 is set to break the record for the number
-        of data breaches; 8.4 billion exposures in just the first quarter.
-      </p>
-      <br>
-      <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
-        It is important for you as an individual to protect yourself in this unique digital landscape and take security into your own hands. Use our email checking tool
-        you can identify whether or not your email and credentials have been involved in any security breaches so that you can take any remediative action. Don't wait any longer! Hurry and Patch your Leak.
-      </p>
+    <div class="container-width" id="ifju">
+        <div style="text-align: center;">
+            <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+                The uncertainty of 2020 as a result of COVID19 has created an environment that has encouraged Cyber Crime to flourish. With many attackers taking advantage of the world's vulnerable state, it is unsurprising that 2020 is set to break the record for the
+                number of data breaches; 8.4 billion exposures in just the first quarter.
+            </p>
+            <br>
+            <p style=" text-align:justify; display: inline-block; max-width: 900px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+                It is important for you as an individual to protect yourself in this unique digital landscape and take security into your own hands. Use our email checking tool you can identify whether or not your email and credentials have been involved in any security
+                breaches so that you can take any remediative action. Don't wait any longer! Hurry and Patch your Leak.
+            </p>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <form class="pwned-form" style="width: 900px; border-radius: 20px; display:inline-block">
+                <div class="form-group">
+                </div>
+                <div class="form-group">
+                    <label class="pwned-label" id="pwned-ipcx">Email</label>
+                    <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v" />
+                </div>
+                <div class="form-group">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
+                </div>
+            </form>
+        </div>
+        <div class="loader" style="display: none;" id="loadingAnimation"></div>
+        <div style="text-align: center;">
+            <table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif; display: inline-block;">
+                <thead class="pwned-table">
+                    <tr>
+                        <th>Breach</th>
+                        <th>Logo</th>
+                        <th style="width: 200px;">Date</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <br>
+        <br>
+        <br>
     </div>
-    <br></br>
-    <div style="text-align: center;">
-      <form class="pwned-form" style="width: 900px; border-radius: 20px; display:inline-block">
-        <div class="form-group">
-        </div>
-        <div class="form-group">
-          <label class="pwned-label" id="pwned-ipcx">Email</label>
-          <input type="email" placeholder="Type here your email" class="pwned-input" id="i25v"/>
-        </div>
-        <div class="form-group">
-        </div>
-        <div class="form-group">
-          <button type="button" class="pwned-button" id="check" onclick="checkFunction()">Check</button>
-        </div>
-      </form>
-    </div>
-    <div class="loader" style="display: none;" id="loadingAnimation"></div>
-    <div style="text-align: center;">
-      <table class="pwned-table" id="breachtable" style="visibility: hidden; font-family: Helvetica, sans-serif; display: inline-block;">
-        <thead class="pwned-table">
-            <tr>
-                <th>Breach</th>
-                <th>Logo</th>
-                <th style="width: 200px;">Date</th>
-                <th>Details</th>
-            </tr>
-        </thead>
-      </table>
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-  </div>
 </section>
-
+<!--Modal tutorial sourced: https://www.w3schools.com/howto/howto_css_modals.asp-->
 <div id="breachwarning" class="modal">
-  <div class="modal-header-breach">
-    <span class="close" onclick="disappear()" style="padding-right: 20px;">&times;</span>
-  </div>
-  <div class="modal-content">
-    <div style="padding: 20px;">
-      <h2>Oh no! Your accounts have been breached!</h2>
-      <h3>Ensure you take the following steps:</h3>
-      <ol>
-        <li>Find out what type of data was stolen
-          <ul>
-            <li>
-              More steps will need to be taken in breaches where the exposed information was more sensitive in nature.
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Take a look at the company's response to the breach. 
-          <ul>
-            <li>
-              Most companies have a page in response to breaches if they have breached.
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Accept the breached company’s offer(s) to help
-          <ul>
-            <li>
-              If the company offers to assist you and protect you for a certain amount of time, take them up on it.
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Change and strengthen your logins, passwords and security Q&A
-          <ul>
-            <li>
-              Immediately change your online login information, passwords, and security Q&A’s for 
-              any breached accounts and any other accounts you have if they use the same/similar passwords. 
-              This will limit the extent of the hacker’s damage.
-            </li>
-            <li>
-              Turn on two-factor authentication
-            </li>
-            <li>
-              If you have difficulty remembering passwords, use a password manager like <a href="https://1password.com/" target="_blank">1password.com</a> 
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Take additional action depending on the stolen data
-          <ul>
-            <li>
-              If more sensitive personal information was stolen (e.g. Social security number), you could become a victim of identity theft. 
-              You can find more information here: <a href="https://www.identitytheft.gov/Info-Lost-or-Stolen" target="_blank">FTC's identity theft website</a>
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Monitor your accounts closely
-          <ul>
-            <li>
-              Watch out for alerts from unauthorised logins to your account
-            </li>
-            <li>
-              Ensure (if applicable to you), that you are using at least one credit monitoring service. This gives you control over your financial accounts 
-              and personal information and help keep you informed of any suspicious activity happening around your finances.
-            </li>
-          </ul>
-        </li>
-      </ol>
+    <div class="modal-header-breach">
+        <span class="close" onclick="disappear()" style="padding-right: 20px;">&times;</span>
     </div>
-  </div>
+    <div class="modal-content">
+        <div style="padding: 20px;">
+            <h2>Oh no! Your accounts have been breached!</h2>
+            <h3>Ensure you take the following steps:</h3>
+            <ol>
+                <li>Find out what type of data was stolen
+                    <ul>
+                        <li>
+                            More steps will need to be taken in breaches where the exposed information was more sensitive in nature.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Take a look at the company's response to the breach.
+                    <ul>
+                        <li>
+                            Most companies have a page in response to breaches if they have breached.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Accept the breached company’s offer(s) to help
+                    <ul>
+                        <li>
+                            If the company offers to assist you and protect you for a certain amount of time, take them up on it.
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Change and strengthen your logins, passwords and security Q&A
+                    <ul>
+                        <li>
+                            Immediately change your online login information, passwords, and security Q&A’s for any breached accounts and any other accounts you have if they use the same/similar passwords. This will limit the extent of the hacker’s damage.
+                        </li>
+                        <li>
+                            Turn on two-factor authentication
+                        </li>
+                        <li>
+                            If you have difficulty remembering passwords, use a password manager like <a href="https://1password.com/" target="_blank">1password.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Take additional action depending on the stolen data
+                    <ul>
+                        <li>
+                            If more sensitive personal information was stolen (e.g. Social security number), you could become a victim of identity theft. You can find more information here: <a href="https://www.identitytheft.gov/Info-Lost-or-Stolen" target="_blank">FTC's identity theft website</a>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Monitor your accounts closely
+                    <ul>
+                        <li>
+                            Watch out for alerts from unauthorised logins to your account
+                        </li>
+                        <li>
+                            Ensure (if applicable to you), that you are using at least one credit monitoring service. This gives you control over your financial accounts and personal information and help keep you informed of any suspicious activity happening around your finances.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
 </div>
-
 <div id="nobreach" class="modal">
-  <div class="modal-header-nobreach">
-    <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;">&times;</span>
-  </div>
-  <div class="modal-content">
-    <div style="padding: 20px;">
-      <h2>Well Done! There are no breaches found!</h2>
-      <h3>However, in order to ensure your cyber safety in the future, remember to do the following things:</h3>
-      <ol>
-        <li>Change and strengthen your logins, passwords and security Q&A
-          <ul>
-            <li>
-              Immediately change your online login information, passwords, and security Q&A’s for any breached accounts 
-              and any other accounts you have if they use the same/similar passwords. This will limit the extent of the hacker’s damage.
-            </li>
-            <li>
-              Turn on two-factor authentication
-            </li>
-            <li>
-              If you have difficulty remembering passwords, use a password manager like <a href="https://1password.com/" target="_blank">1password.com</a>
-            </li>
-          </ul>
-        </li>
-        <br>
-        <li>Monitor your accounts closely 
-          <ul>
-            <li>
-              Watch out for alerts from unauthorised logins to your account
-            </li>
-            <li>
-              Ensure (if applicable to you), that you are using at least one credit monitoring service. This gives you control over your financial accounts 
-              and personal information and helps keep you informed of any suspicious activity happening around your finances.
-            </li>
-          </ul>
-        </li>
-      </ol>
+    <div class="modal-header-nobreach">
+        <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;">&times;</span>
     </div>
-  </div>
+    <div class="modal-content">
+        <div style="padding: 20px;">
+            <h2>Well Done! There are no breaches found!</h2>
+            <h3>However, in order to ensure your cyber safety in the future, remember to do the following things:</h3>
+            <ol>
+                <li>Change and strengthen your logins, passwords and security Q&A
+                    <ul>
+                        <li>
+                            Immediately change your online login information, passwords, and security Q&A’s for any breached accounts and any other accounts you have if they use the same/similar passwords. This will limit the extent of the hacker’s damage.
+                        </li>
+                        <li>
+                            Turn on two-factor authentication
+                        </li>
+                        <li>
+                            If you have difficulty remembering passwords, use a password manager like <a href="https://1password.com/" target="_blank">1password.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <br>
+                <li>Monitor your accounts closely
+                    <ul>
+                        <li>
+                            Watch out for alerts from unauthorised logins to your account
+                        </li>
+                        <li>
+                            Ensure (if applicable to you), that you are using at least one credit monitoring service. This gives you control over your financial accounts and personal information and helps keep you informed of any suspicious activity happening around your finances.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
 </div>

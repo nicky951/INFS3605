@@ -1,287 +1,282 @@
 {% load static %}
-
 <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
+   <div class="container-width" id="ifju">
+      <div class="logo-container" id="io2t" onclick="location.href='/'">
+         <div class="logo"> Home
+         </div>
       </div>
-    </div>
-    <nav class="menu">
-      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">AWARENESS GAME
+      <nav class="menu">
+         <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">AWARENESS GAME
+         </div>
+         <div class="menu-item" onclick="location.href='/emailchecker'">BREACH CHECKER
+         </div>
+         <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
+         </div>
+      </nav>
+      <div class="clearfix">
       </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'">BREACH CHECKER
-      </div>
-      <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
       <div class="lead-title" style="width: 500px; font-weight: bold;">CyberShield <br>Simulation Game
       </div>
-    </div>
-  </div>
+   </div>
 </header>
 <section class="flex-sect" style="background-color: #818181;">
-    <div class="container-width" id="ifju" style="text-align: center;">
+   <div class="container-width" id="ifju" style="text-align: center;">
       <div style="width: 700px; height: 150px; border: solid #222222; background-color: #41257F; display: inline-block; text-align: center; border-radius: 40px;">
-        <p class="standardText" style="padding: 20px; text-align: center; display: inline-block; width: 700px; color: #ffffff; font-weight: bolder; line-height: 20px;"> 
-          The CyberShield Simulation game is a way for individuals to be put in a situational
-          circumstances that assess their decisions in a security context. 
-          This game allows them to experiment and understand the consquences of their actions, ensure that mistakes made here are not made in real life.
-        </p>
+         <p class="standardText" style="padding: 20px; text-align: center; display: inline-block; width: 700px; color: #ffffff; font-weight: bolder; line-height: 20px;"> 
+            The CyberShield Simulation game is a way for individuals to be put in a situational
+            circumstances that assess their decisions in a security context. 
+            This game allows them to experiment and understand the consquences of their actions, ensure that mistakes made here are not made in real life.
+         </p>
       </div>
       <br>
       <br>
       <br>
       <br>
       <div style="width: 900px; height:150px; display: inline-block; border: solid #222222; text-align: center; background-color: #222222;" id="meterContainer">
-          <span class="close" style="padding-right: 10px; cursor: normal;" onclick="location.href='/'">&times;</span>
-          <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
-          <meter max="20" class="meter" id="scoreMeter">
-              <style>
-                  .meter {
-                      width: 600px;
-                      height: 70px;
-                  }
-  
-                  meter::-webkit-meter-bar {
-                  background: #fafafa;
-                  border: 3px solid #222222;
-                  }
-  
-                  meter[value="1"]::-webkit-meter-optimum-value { background: #DC402B; }
-                  meter[value="2"]::-webkit-meter-optimum-value { background: #DC402B; }
-                  meter[value="3"]::-webkit-meter-optimum-value { background: #E3562D; }
-                  meter[value="4"]::-webkit-meter-optimum-value { background: #E3562D; }
-                  meter[value="5"]::-webkit-meter-optimum-value { background: #E9802F; }
-                  meter[value="6"]::-webkit-meter-optimum-value { background: #E9802F; }
-                  meter[value="7"]::-webkit-meter-optimum-value { background: #F1AA31; }
-                  meter[value="8"]::-webkit-meter-optimum-value { background: #F1AA31; }
-                  meter[value="9"]::-webkit-meter-optimum-value { background: #F8D632; }
-                  meter[value="10"]::-webkit-meter-optimum-value { background: #F8D632; }
-                  meter[value="11"]::-webkit-meter-optimum-value { background: #E4F52E; }
-                  meter[value="12"]::-webkit-meter-optimum-value { background: #E4F52E; }
-                  meter[value="13"]::-webkit-meter-optimum-value { background: #CCF428; }
-                  meter[value="14"]::-webkit-meter-optimum-value { background: #CCF428; }
-                  meter[value="15"]::-webkit-meter-optimum-value { background: #B1EE21; }
-                  meter[value="16"]::-webkit-meter-optimum-value { background: #B1EE21; }
-                  meter[value="17"]::-webkit-meter-optimum-value { background: #98E71B; }
-                  meter[value="18"]::-webkit-meter-optimum-value { background: #98E71B; }
-                  meter[value="19"]::-webkit-meter-optimum-value { background: #6CDD17; }
-                  meter[value="20"]::-webkit-meter-optimum-value { background: #6CDD17; }
-              </style>
-          </meter>
-          <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
-          <br>
-          <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
-          <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
-          <br>
-          <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="current">0</label>
-          <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="twenty">/20</label>
+         <span class="close" style="padding-right: 10px; cursor: normal;" onclick="location.href='/'">&times;</span>
+         <img src="{% static 'webapp/static/hacker.png' %}" style="width: 50px; height: 50px;">
+         <meter max="20" class="meter" id="scoreMeter">
+            <style>
+               /*Inline styling of Meter. Please see Meter styling in CSS for more source details*/
+               .meter {
+               width: 600px;
+               height: 70px;
+               }
+               meter::-webkit-meter-bar {
+               background: #fafafa;
+               border: 3px solid #222222;
+               }
+               meter[value="1"]::-webkit-meter-optimum-value { background: #DC402B; }
+               meter[value="2"]::-webkit-meter-optimum-value { background: #DC402B; }
+               meter[value="3"]::-webkit-meter-optimum-value { background: #E3562D; }
+               meter[value="4"]::-webkit-meter-optimum-value { background: #E3562D; }
+               meter[value="5"]::-webkit-meter-optimum-value { background: #E9802F; }
+               meter[value="6"]::-webkit-meter-optimum-value { background: #E9802F; }
+               meter[value="7"]::-webkit-meter-optimum-value { background: #F1AA31; }
+               meter[value="8"]::-webkit-meter-optimum-value { background: #F1AA31; }
+               meter[value="9"]::-webkit-meter-optimum-value { background: #F8D632; }
+               meter[value="10"]::-webkit-meter-optimum-value { background: #F8D632; }
+               meter[value="11"]::-webkit-meter-optimum-value { background: #E4F52E; }
+               meter[value="12"]::-webkit-meter-optimum-value { background: #E4F52E; }
+               meter[value="13"]::-webkit-meter-optimum-value { background: #CCF428; }
+               meter[value="14"]::-webkit-meter-optimum-value { background: #CCF428; }
+               meter[value="15"]::-webkit-meter-optimum-value { background: #B1EE21; }
+               meter[value="16"]::-webkit-meter-optimum-value { background: #B1EE21; }
+               meter[value="17"]::-webkit-meter-optimum-value { background: #98E71B; }
+               meter[value="18"]::-webkit-meter-optimum-value { background: #98E71B; }
+               meter[value="19"]::-webkit-meter-optimum-value { background: #6CDD17; }
+               meter[value="20"]::-webkit-meter-optimum-value { background: #6CDD17; }
+            </style>
+         </meter>
+         <img src="{% static 'webapp/static/permission.png' %}" style="margin-left: 10px; width: 50px; height: 50px;">
+         <br>
+         <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext">Score:</label>
+         <label style="font-size: 30px; color: #73ebe5; display: inline-block;" class="standardtext" id="points">0</label>
+         <br>
+         <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="current">0</label>
+         <label style="font-size: 20px; color: #73ebe5; display: inline-block;" class="standardtext" id="twenty">/20</label>
       </div>
-        <div style="width: 900px; height:700px; display: inline-block; border: solid #222222; background-color: #fafafa;" id="gameContainer" >
-            <div style="width: 700px; height:150px; display: block; margin: 0 auto; margin-top: 50px;" id="questionContainer">
-                <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: 20px; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
-                </div>
+      <div style="width: 900px; height:700px; display: inline-block; border: solid #222222; background-color: #fafafa;" id="gameContainer" >
+         <div style="width: 700px; height:150px; display: block; margin: 0 auto; margin-top: 50px;" id="questionContainer">
+            <div style="width: 600px; height:120px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: 20px; text-align: justify; padding: 10px; color: #ffffff; background-color: #222222;" id="question">
             </div>
-            <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px; background-color: #c7c7c7; border-radius: 10px;" id="answerContainer">
-                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="1">
-                </div>
-                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="2">
-                </div>
-                <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="3">     
-                </div>
+         </div>
+         <div style="width: 700px; height:360px; display: block; border: solid; margin: 0 auto; margin-top: 50px; background-color: #c7c7c7; border-radius: 10px;" id="answerContainer">
+            <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="1">
             </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div style="width: 900px; height: 700px; border: solid #222222; background-color: #fafafa; display: inline-block; text-align: center; border-radius: 40px;">
-            <h1 style="color: #41257F;">How security conscious are you?</h1>
-            <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block; width:600px;">
-                <br>
-                <br>
-                <thead>
-                  <tr>
-                      <td style="width: 100px;"> <img src="{% static 'webapp/static/insecure.png' %}" style="width: 50px; height: 50px;"></td>
-                      <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">0 - 5 -> Low Security Awareness:</b> <br>Our Cyber Security
-                        simulation has indicated that you have a low awareness regarding security and its practices. It is essential for both
-                        you and your information's safety that you develop practices that will protect your information. It is recommended that you have a 
-                        read through the articles listed in CyberShield's Sec-Library to get started!
-                      </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 100px;"> <img src="{% static 'webapp/static/information.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">5 - 10 -> Average Security Awareness:</b> <br>Our simulation has indicated that
-                        you have an average awareness of Cyber Security issues and practices. Although you engage in some good practices (good job!) there are still
-                        some things that you will need to be aware of. No fear, have a read through our Cyber Security News on our home page to ensure you are up
-                        to date with all things security!
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 100px;"> <img src="{% static 'webapp/static/ylock.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">10 - 15 -> High Security Awareness:</b> <br>You are above average in your awareness!
-                        Keep on practicing strong passwords and developing practices that will keep you safe online in these times of crisis. To improve why don't you try out our
-                        Email Checking tool to ensure that none of your email addresses have been leaked through any data breaches!
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="width: 100px;"> <img src="{% static 'webapp/static/trophy.png' %}" style="width: 50px; height: 50px;"></td>
-                    <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">15 - 20 -> CyberShield Security Awareness Expert:</b> <br>Congratulations! Our simulation
-                        has indicated that you are a Top Notch security awareness expert! But your journey in security does not end here... why not explore the security field further?
-                        Websites such as <a href="https://bugsbounty.com/" target="_blank">Bugs Bounty</a> and <a href="https://application.security/free-application-security-training">Contra</a>
-                        are good places to start!
-                    </td>
-                  </tr>
-                </thead>
-            </table>
-          </div>
-    </div>
-    <script>
-
-        function disappear() {
-            document.getElementById('breachwarning').style.display = 'none';
-            
-            if(counter==20) {
-                complete();
-                document.getElementById('close').onclick = function() {
-                    document.getElementById('nobreach').style.display = 'none';
-                    lock();
-                }
-            }
-        }
-
-        function disappearNoBreach() {
-            document.getElementById('nobreach').style.display = 'none';
-
-            if(counter==20) {
-                complete();
-                document.getElementById('close').onclick = function() {
-                    document.getElementById('nobreach').style.display = 'none';
-                    lock();
-                }
-            }
-        }
-
-        function correct() {
-            document.getElementById('nobreach').style.display='block';
-            document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
-
-            counter++;
-            question.innerHTML = data.questions[counter]['question'];
-            ansOne.innerHTML = data.questions[counter]['choiceOne'];
-            ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-            ansThr.innerHTML = data.questions[counter]['choiceThree'];
-            counterScore = counterScore + 1;
-            
-            document.getElementById('current').innerHTML = counter;
-            document.getElementById('scoreMeter').value = counterScore;
-            document.getElementById('points').innerHTML = counterScore;
-        }
-
-        function incorrect() {
-            document.getElementById('breachwarning').style.display='block';
-            document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
-
-            counter++;
-
-            question.innerHTML = data.questions[counter]['question'];
-            ansOne.innerHTML = data.questions[counter]['choiceOne'];
-            ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
-            ansThr.innerHTML = data.questions[counter]['choiceThree'];
-
-            if(counterScore > 0) {
-                counterScore = counterScore - 1;
-            }
-
-            document.getElementById('current').innerHTML = counter;
-            document.getElementById('scoreMeter').value = counterScore;
-            document.getElementById('points').innerHTML = counterScore;
-        }
-
-        function complete() {
-            document.getElementById('nobreach').style.display='block';
-            document.getElementById('heading').innerHTML = "Congratulations!"
-            document.getElementById('correctFeedback').innerHTML = "You have completed the CyberShield Security Simulation! Keep checking-in for future updates!"
-            document.getElementById('current').innerHTML="20"
-        }
-
-        function lock() {
-            ansOne.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
-            ansTwo.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
-            ansThr.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
-            question.style.textAlign='center';
-            question.innerHTML= "<p style= \"font-size: 30px; color:#ffffff; display:inline-block\" class= \"standardText\">Check back regularly for updates!<p>";
-        }
-
-        var gameData = "{% static 'data.json' %}";
-        var request = new XMLHttpRequest();
-        request.open('GET', gameData, false);
-        request.send();
-        var data = JSON.parse(request.response);
-
-        var question = document.getElementById('question');
-        var feedback = document.getElementById('feedbackText');
-        var ansOne = document.getElementById('1');
-        var ansTwo = document.getElementById('2');
-        var ansThr = document.getElementById('3');
-
-        question.innerHTML = data.questions[0]['question'];
-        ansOne.innerHTML = data.questions[0]['choiceOne'];
-        ansTwo.innerHTML = data.questions[0]['choiceTwo'];
-        ansThr.innerHTML = data.questions[0]['choiceThree'];
-
-        var counter = 0;
-        var counterScore = 0;
-
-        ansOne.onclick = function() {
-            if((data.questions[counter]['correctChoice']== 1) && (counter<20)) {
-                correct();
-            } else {
-                incorrect();
-            }
-        }
-
-        ansTwo.onclick = function() {
-            if((data.questions[counter]['correctChoice']== 2) && (counter<20)) {
-                correct();
-            } else {
-                incorrect();
-            }
-        }
-
-        ansThr.onclick = function() {
-            if((data.questions[counter]['correctChoice']== 3) && (counter<20)) {
-                correct();
-            } else {
-                incorrect();
-            }
-        }
-    </script>
+            <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="2">
+            </div>
+            <div style="width: 500px; height:90px; display: block; border: solid; margin: 0 auto; margin-top: 20px; border-radius: 10px; font-size: 15px; line-height: normal; text-align: justify;" class="logo" id="3">     
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="width: 900px; height: 700px; border: solid #222222; background-color: #fafafa; display: inline-block; text-align: center; border-radius: 40px;">
+         <h1 style="color: #41257F;">How security conscious are you?</h1>
+         <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block; width:600px;">
+            <br>
+            <br>
+            <thead>
+               <tr>
+                  <td style="width: 100px;"> <img src="{% static 'webapp/static/insecure.png' %}" style="width: 50px; height: 50px;"></td>
+                  <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">0 - 5 -> Low Security Awareness:</b> <br>Our Cyber Security
+                     simulation has indicated that you have a low awareness regarding security and its practices. It is essential for both
+                     you and your information's safety that you develop practices that will protect your information. It is recommended that you have a 
+                     read through the articles listed in CyberShield's Sec-Library to get started!
+                  </td>
+               </tr>
+               <tr>
+                  <td style="width: 100px;"> <img src="{% static 'webapp/static/information.png' %}" style="width: 50px; height: 50px;"></td>
+                  <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">5 - 10 -> Average Security Awareness:</b> <br>Our simulation has indicated that
+                     you have an average awareness of Cyber Security issues and practices. Although you engage in some good practices (good job!) there are still
+                     some things that you will need to be aware of. No fear, have a read through our Cyber Security News on our home page to ensure you are up
+                     to date with all things security!
+                  </td>
+               </tr>
+               <tr>
+                  <td style="width: 100px;"> <img src="{% static 'webapp/static/ylock.png' %}" style="width: 50px; height: 50px;"></td>
+                  <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">10 - 15 -> High Security Awareness:</b> <br>You are above average in your awareness!
+                     Keep on practicing strong passwords and developing practices that will keep you safe online in these times of crisis. To improve why don't you try out our
+                     Email Checking tool to ensure that none of your email addresses have been leaked through any data breaches!
+                  </td>
+               </tr>
+               <tr>
+                  <td style="width: 100px;"> <img src="{% static 'webapp/static/trophy.png' %}" style="width: 50px; height: 50px;"></td>
+                  <td class="listtext" style="padding-top: 10px; text-align: justify;"><b style="color: #41257F;">15 - 20 -> CyberShield Security Awareness Expert:</b> <br>Congratulations! Our simulation
+                     has indicated that you are a Top Notch security awareness expert! But your journey in security does not end here... why not explore the security field further?
+                     Websites such as <a href="https://bugsbounty.com/" target="_blank">Bugs Bounty</a> and <a href="https://application.security/free-application-security-training">Contra</a>
+                     are good places to start!
+                  </td>
+               </tr>
+            </thead>
+         </table>
+      </div>
+   </div>
+   <script>
+      function disappear() {
+          document.getElementById('breachwarning').style.display = 'none';
+          
+          if(counter==20) {
+              complete();
+              document.getElementById('close').onclick = function() {
+                  document.getElementById('nobreach').style.display = 'none';
+                  lock();
+              }
+          }
+      }
+      
+      function disappearNoBreach() {
+          document.getElementById('nobreach').style.display = 'none';
+      
+          if(counter==20) {
+              complete();
+              document.getElementById('close').onclick = function() {
+                  document.getElementById('nobreach').style.display = 'none';
+                  lock();
+              }
+          }
+      }
+      
+      function correct() {
+          document.getElementById('nobreach').style.display='block';
+          document.getElementById('correctFeedback').innerHTML = data.questions[counter]['feedback'];
+      
+          counter++;
+          question.innerHTML = data.questions[counter]['question'];
+          ansOne.innerHTML = data.questions[counter]['choiceOne'];
+          ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+          ansThr.innerHTML = data.questions[counter]['choiceThree'];
+          counterScore = counterScore + 1;
+          
+          document.getElementById('current').innerHTML = counter;
+          document.getElementById('scoreMeter').value = counterScore;
+          document.getElementById('points').innerHTML = counterScore;
+      }
+      
+      function incorrect() {
+          document.getElementById('breachwarning').style.display='block';
+          document.getElementById('incorrectFeedback').innerHTML = data.questions[counter]['feedback'];
+      
+          counter++;
+      
+          question.innerHTML = data.questions[counter]['question'];
+          ansOne.innerHTML = data.questions[counter]['choiceOne'];
+          ansTwo.innerHTML = data.questions[counter]['choiceTwo'];
+          ansThr.innerHTML = data.questions[counter]['choiceThree'];
+      
+          if(counterScore > 0) {
+              counterScore = counterScore - 1;
+          }
+      
+          document.getElementById('current').innerHTML = counter;
+          document.getElementById('scoreMeter').value = counterScore;
+          document.getElementById('points').innerHTML = counterScore;
+      }
+      
+      function complete() {
+          document.getElementById('nobreach').style.display='block';
+          document.getElementById('heading').innerHTML = "Congratulations!"
+          document.getElementById('correctFeedback').innerHTML = "You have completed the CyberShield Security Simulation! Keep checking-in for future updates!"
+          document.getElementById('current').innerHTML="20"
+      }
+      
+      function lock() {
+          ansOne.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+          ansTwo.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+          ansThr.innerHTML= "<img src= \"{% static 'webapp/static/ylock.png' %}\" style=\"width: 50px; height 50px;\">";
+          question.style.textAlign='center';
+          question.innerHTML= "<p style= \"font-size: 30px; color:#ffffff; display:inline-block\" class= \"standardText\">Check back regularly for updates!<p>";
+      }
+      
+      var gameData = "{% static 'data.json' %}";
+      var request = new XMLHttpRequest();
+      request.open('GET', gameData, false);
+      request.send();
+      var data = JSON.parse(request.response);
+      
+      var question = document.getElementById('question');
+      var feedback = document.getElementById('feedbackText');
+      var ansOne = document.getElementById('1');
+      var ansTwo = document.getElementById('2');
+      var ansThr = document.getElementById('3');
+      
+      question.innerHTML = data.questions[0]['question'];
+      ansOne.innerHTML = data.questions[0]['choiceOne'];
+      ansTwo.innerHTML = data.questions[0]['choiceTwo'];
+      ansThr.innerHTML = data.questions[0]['choiceThree'];
+      
+      var counter = 0;
+      var counterScore = 0;
+      
+      ansOne.onclick = function() {
+          if((data.questions[counter]['correctChoice']== 1) && (counter<20)) {
+              correct();
+          } else {
+              incorrect();
+          }
+      }
+      
+      ansTwo.onclick = function() {
+          if((data.questions[counter]['correctChoice']== 2) && (counter<20)) {
+              correct();
+          } else {
+              incorrect();
+          }
+      }
+      
+      ansThr.onclick = function() {
+          if((data.questions[counter]['correctChoice']== 3) && (counter<20)) {
+              correct();
+          } else {
+              incorrect();
+          }
+      }
+   </script>
 </section>
-
+<!--Modal Box drawn off the email checking page -"pwned.html". See that file for more details-->
 <div id="breachwarning" class="modal">
-    <div class="modal-header-breach">
+   <div class="modal-header-breach">
       <span class="close" onclick="disappear()" style="padding-right: 20px;">&times;</span>
-    </div>
-    <div class="modal-content">
+   </div>
+   <div class="modal-content">
       <div style="padding: 20px;">
-        <h2>Incorrect</h2>
-        <h3 id="incorrectFeedback"></h3>
+         <h2>Incorrect</h2>
+         <h3 id="incorrectFeedback"></h3>
       </div>
-    </div>
-  </div>
-  
-  <div id="nobreach" class="modal">
-    <div class="modal-header-nobreach">
+   </div>
+</div>
+<div id="nobreach" class="modal">
+   <div class="modal-header-nobreach">
       <span class="close" onclick="disappearNoBreach()" style="padding-right: 20px;" id="close">&times;</span>
-    </div>
-    <div class="modal-content">
+   </div>
+   <div class="modal-content">
       <div style="padding: 20px;">
-        <h2 id="heading">Correct</h2>
-        <h3 id="correctFeedback"></h3>
+         <h2 id="heading">Correct</h2>
+         <h3 id="correctFeedback"></h3>
       </div>
-    </div>
-  </div>
+   </div>
+</div>

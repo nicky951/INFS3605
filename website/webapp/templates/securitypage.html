@@ -1,145 +1,138 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
-      </div>
+    <div class="container-width" id="ifju">
+        <div class="logo-container" id="io2t" onclick="location.href='/'">
+            <div class="logo"> Home
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+            </div>
+            <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+            </div>
+            <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
+            </div>
+        </nav>
+        <div class="clearfix">
+        </div>
+        <div class="lead-title" style="width: 500px; font-weight: bold;">Security: A Background
+        </div>
     </div>
-    <nav class="menu">
-      <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
-      </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
-      </div>
-      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
-    <div class="lead-title" style="width: 500px; font-weight: bold;">Security: A Background
-    </div>
-    </div>
-  </div>
 </header>
 <section class="flex-sect">
-  <div class="container-width">
-    <div style="text-align: center;">
-      <h1 style="color: #41257F;">Why is Cyber Security so important now?</h1>
-      <p class="standardText">
-      COVID-19 and the introduction of a work from home environment has lead to a 600% increase in phishing attempts and the 
-      detection of over 60,000 “COVID” websites designed to steal your personal information!
-      <br>
-      <br>
-      In today’s connected world, everyone benefits from advanced cyberdefense programs. At an individual level, a cybersecurity attack can result in 
-      everything from identity theft, to extortion attempts, to the loss of important data like family photos. 
-      Everyone relies on critical infrastructure like power plants, hospitals, and financial service companies. 
-      Securing these and other organizations is essential to keeping our society functioning.
-      </p>
-      <br>
-      <br>
-      <img src="{% static 'webapp/static/securitypagelock.png' %}" style="width: 900; height: auto;"></img>
-      <br>
-      <br>
-      <br>
-      <br>
-      <h1 style="color: #41257F;">What is Cyber Security all about?!</h1>
-      <p class="standardText">
-        Cyber security refers to the body of technologies, processes, and practices designed to protect networks, 
-        devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.
-      </p>
-      <br>
-      <br>
-      <h1 style="color: #41257F;">What can be affected?</h1>
-      <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block;">
-        <thead>
-          <tr>
-              <td style="width: 100px;"> <img src="{% static 'webapp/static/wifi.png' %}" style="width: 50px; height: 50px;"></td>
-              <td class="listtext"><b style="color: #41257F;">Network Security</b>
-              </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/computer.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Application Security</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/segment.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Endpoint Security</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/data.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Data Security</b> 
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/id.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Identity Management</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/dbms.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Database and Infrastructure Security</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/cloud.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Cloud Security</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/phone.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Mobile Security</b>
-            </td>
-          </tr>
-          <tr>
-            <td style="width: 100px;"> <img src="{% static 'webapp/static/earthquake.png' %}" style="width: 50px; height: 50px;"></td>
-            <td class="listtext"><b style="color: #41257F;">Disaster Recovery/Business Continuity Planning</b>
-            </td>
-          </tr>
-        </thead>
-      </table>
-      <br>
-      <br>
-      <h1 style="color: #41257F;">Who is truly impacted?</h1>
-      <table style="border: 1px solid #222222; border-collapse: collapse; display: inline-block; width: 900px;">
-        <thead>
-          <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
-            People
-          </th>
-          <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
-            Processes
-          </th>
-          <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
-            Technology
-          </th>
-        </thead>
-        <tbody>
-          <td style="padding: 10px; border: 1px solid #222222;">
-            Users must understand and comply with basic data security principles like choosing strong passwords, 
-            being wary of attachments in email, and backing up data.
-          </td>
-          <td style="padding: 10px; border: 1px solid #222222;">
-            Organizations must have a framework for how they deal with both attempted and successful cyber attacks.
-          </td>
-          <td style="padding: 10px; border: 1px solid #222222;">
-            Technology is essential to giving organizations and individuals the computer security tools needed to protect themselves from cyber attacks. 
-          </td>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <br>
-      <br>
-      <i class="standardText">Does this look familiar?</i>
-      <br>
-      <br>
-      <img src="{% static 'webapp/static/fears.png' %}" style="width: 900; height: auto;"></img>
-      <br>
-      <br>
-      <p class="standardText">
-        It is unquestionable that we live in an era of persistent cyber threats.
-      </p>
+    <div class="container-width">
+        <div style="text-align: center;">
+            <h1 style="color: #41257F;">Why is Cyber Security so important now?</h1>
+            <p class="standardText">
+                COVID-19 and the introduction of a work from home environment has lead to a 600% increase in phishing attempts and the detection of over 60,000 “COVID” websites designed to steal your personal information!
+                <br>
+                <br> In today’s connected world, everyone benefits from advanced cyberdefense programs. At an individual level, a cybersecurity attack can result in everything from identity theft, to extortion attempts, to the loss of important data like
+                family photos. Everyone relies on critical infrastructure like power plants, hospitals, and financial service companies. Securing these and other organizations is essential to keeping our society functioning.
+            </p>
+            <br>
+            <br>
+            <img src="{% static 'webapp/static/securitypagelock.png' %}" style="width: 900; height: auto;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 style="color: #41257F;">What is Cyber Security all about?!</h1>
+            <p class="standardText">
+                Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. Cyber security may also be referred to as information technology security.
+            </p>
+            <br>
+            <br>
+            <h1 style="color: #41257F;">What can be affected?</h1>
+            <table class="normal-table" style="font-family: Helvetica, sans-serif; display: inline-block;">
+                <thead>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/wifi.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Network Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/computer.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Application Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/segment.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Endpoint Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/data.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Data Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/id.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Identity Management</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/dbms.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Database and Infrastructure Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/cloud.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Cloud Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/phone.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Mobile Security</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px;"> <img src="{% static 'webapp/static/earthquake.png' %}" style="width: 50px; height: 50px;"></td>
+                        <td class="listtext"><b style="color: #41257F;">Disaster Recovery/Business Continuity Planning</b>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <br>
+            <h1 style="color: #41257F;">Who is truly impacted?</h1>
+            <table style="border: 1px solid #222222; border-collapse: collapse; display: inline-block; width: 900px;">
+                <thead>
+                    <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
+                        People
+                    </th>
+                    <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
+                        Processes
+                    </th>
+                    <th style="border: 1px solid #222222; width: 300px; padding: 10px;">
+                        Technology
+                    </th>
+                </thead>
+                <tbody>
+                    <td style="padding: 10px; border: 1px solid #222222;">
+                        Users must understand and comply with basic data security principles like choosing strong passwords, being wary of attachments in email, and backing up data.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #222222;">
+                        Organizations must have a framework for how they deal with both attempted and successful cyber attacks.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #222222;">
+                        Technology is essential to giving organizations and individuals the computer security tools needed to protect themselves from cyber attacks.
+                    </td>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <i class="standardText">Does this look familiar?</i>
+            <br>
+            <br>
+            <img src="{% static 'webapp/static/fears.png' %}" style="width: 900; height: auto;">
+            <br>
+            <br>
+            <p class="standardText">
+                It is unquestionable that we live in an era of persistent cyber threats.
+            </p>
+        </div>
     </div>
-  </div>
 </section>

@@ -1,137 +1,143 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-  <div class="container-width" id="ifju">
-    <div class="logo-container" id="io2t" onclick="location.href='/'">
-      <div class="logo"> Home
-      </div>
+    <div class="container-width" id="ifju">
+        <div class="logo-container" id="io2t" onclick="location.href='/'">
+            <div class="logo"> Home
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+            </div>
+            <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+            </div>
+            <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
+            </div>
+        </nav>
+        <div class="clearfix">
+        </div>
+        <div class="lead-title" style="width: 500px; font-weight: bold;">Security at a Glance
+        </div>
     </div>
-    <nav class="menu">
-      <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
-      </div>
-      <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
-      </div>
-      <div class="menu-item" style="background-color: white; border: #41257F; color:#41257F; border-style: solid;">SEC-LIBRARY
-      </div>
-    </nav>
-    <div class="clearfix">
-    </div>
-    <div class="lead-title" style="width: 500px; font-weight: bold;">Security at a Glance
-    </div>
-    </div>
-  </div>
 </header>
 <section class="flex-sect">
-  <div class="container-width">
-    <div class="flex-title" id="iqau8">CyberShield Security Library
-    </div>
-    <div style="text-align: center;">
-      <p style=" text-align:center; display: inline-block; max-width: 700px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
-        Protecting yourself online requires more than just a firewall. Read through our CyberShield Security Library below, so that you stay up to date with the best security practices.
-      </p>
-    </div>
-    <div class="cards">
-      <div class="card" onclick="location.href='passwordpage'">
-        <div class="card-header">
+    <div class="container-width">
+        <div class="flex-title" id="iqau8">CyberShield Security Library
         </div>
-        <div class="card-body"> 
-          <div class="card-title" style="text-align: center;">Password Etiquette
-          </div>
-          <br>
-          <div class="card-desc"> Managing passwords is of the utmost importance in the 21st century as they are susceptible to brute force attacks. Ensure your created passwords follow our provided tips and you will feel reassured that your online accounts are well protected.
-          </div>
+        <div style="text-align: center;">
+            <p style=" text-align:center; display: inline-block; max-width: 700px; color: rgba(0, 0, 0, 0.5); font-family: Arial, Helvetica, sans-serif;">
+                Protecting yourself online requires more than just a firewall. Read through our CyberShield Security Library below, so that you stay up to date with the best security practices.
+            </p>
         </div>
-      </div>
-      <div class="card" onclick="location.href='wfhpage'">
-        <div class="card-header ch2">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Cyber @ Home
-          </div>
-          <br>
-          <div class="card-desc"> The transition to the work from home environment has brought its own risks with an increased surge in phishing attempts and malicious websites designed to steal sensitive information. Indulge in our working from home tips to ensure you are staying safe.
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='attackpage'">
-        <div class="card-header ch3">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Common Social Engineering Attacks
-          </div>
-          <br>
-          <div class="card-desc"> Since the COVID-19 pandemic, there has been a 600% increase in forms of social engineering attacks that affect complacent individuals. These attacks can come in a multitude of forms and are always changing so learn about the different types here.
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='preventionpage'">
-        <div class="card-header ch4">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Prevention Techniques
-          </div>
-          <br>
-          <div class="card-desc"> “Prevention is better than a cure” - this saying also goes for keeping safe on the Internet in our current pandemic and work from home environment. Make sure that you adhere to the following safety protocols and remember to not take any risks when it comes to safety.
+        <div class="cards">
+            <div class="card" onclick="location.href='passwordpage'">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Password Etiquette
+                    </div>
+                    <br>
+                    <div class="card-desc"> Managing passwords is of the utmost importance in the 21st century as they are susceptible to brute force attacks. Ensure your created passwords follow our provided tips and you will feel reassured that your online accounts are well
+                        protected.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='wfhpage'">
+                <div class="card-header ch2">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Cyber @ Home
+                    </div>
+                    <br>
+                    <div class="card-desc"> The transition to the work from home environment has brought its own risks with an increased surge in phishing attempts and malicious websites designed to steal sensitive information. Indulge in our working from home tips to ensure
+                        you are staying safe.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='attackpage'">
+                <div class="card-header ch3">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Common Social Engineering Attacks
+                    </div>
+                    <br>
+                    <div class="card-desc"> Since the COVID-19 pandemic, there has been a 600% increase in forms of social engineering attacks that affect complacent individuals. These attacks can come in a multitude of forms and are always changing so learn about the different
+                        types here.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='preventionpage'">
+                <div class="card-header ch4">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Prevention Techniques
+                    </div>
+                    <br>
+                    <div class="card-desc"> “Prevention is better than a cure” - this saying also goes for keeping safe on the Internet in our current pandemic and work from home environment. Make sure that you adhere to the following safety protocols and remember to not take
+                        any risks when it comes to safety.
 
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='securitypage'">
-        <div class="card-header ch5">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Security: A Background
-          </div>
-          <br>
-          <div class="card-desc"> Not sure on what the current cybersecurity landscape looks like or why it is increasingly important to stay safe when online? Come and read about who and what can be impacted by cybercrime.
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='detectionpage'">
-        <div class="card-header ch6">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Detection Techniques
-          </div>
-          <br>
-          <div class="card-desc"> It’s one thing knowing about the types of social engineering and cyber attacks that are prevalent, but it is of the utmost importance to know how to identify and detect them. We have included key points in detecting attacks with a worked example.
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='netsecuritypage'">
-        <div class="card-header ch7">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Network Security
-          </div>
-          <br>
-          <div class="card-desc"> their network is adequate, secure and effective. Follow our network best practice checklist to ensure that you are keeping your employees safe. 
-          </div>
-        </div>
-      </div>
-      <div class="card" onclick="location.href='policypage'">
-        <div class="card-header ch8">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">Security Policies
-          </div>
-          <br>
-          <div class="card-desc"> At the forefront of a safe and successful online organisation is a cyber security policy plan and framework which details exactly how employees should work from home and how to prepare, prevent and respond to cyber attacks. We have included an industry leading cyber security policy plan for you to adhere to.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='securitypage'">
+                <div class="card-header ch5">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Security: A Background
+                    </div>
+                    <br>
+                    <div class="card-desc"> Not sure on what the current cybersecurity landscape looks like or why it is increasingly important to stay safe when online? Come and read about who and what can be impacted by cybercrime.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='detectionpage'">
+                <div class="card-header ch6">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Detection Techniques
+                    </div>
+                    <br>
+                    <div class="card-desc"> It’s one thing knowing about the types of social engineering and cyber attacks that are prevalent, but it is of the utmost importance to know how to identify and detect them. We have included key points in detecting attacks with a
+                        worked example.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='netsecuritypage'">
+                <div class="card-header ch7">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Network Security
+                    </div>
+                    <br>
+                    <div class="card-desc"> their network is adequate, secure and effective. Follow our network best practice checklist to ensure that you are keeping your employees safe.
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='policypage'">
+                <div class="card-header ch8">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">Security Policies
+                    </div>
+                    <br>
+                    <div class="card-desc"> At the forefront of a safe and successful online organisation is a cyber security policy plan and framework which details exactly how employees should work from home and how to prepare, prevent and respond to cyber attacks. We have
+                        included an industry leading cyber security policy plan for you to adhere to.
 
-          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="location.href='aboutuspage'">
+                <div class="card-header ch9">
+                </div>
+                <div class="card-body">
+                    <div class="card-title" style="text-align: center;">About Us
+                    </div>
+                    <br>
+                    <div class="card-desc"> We at Anova Consulting are proud to have launched our cybersecurity education and awareness website “Cybershield”. Take a look at our very informative resources, email breach checker, news page and top it off by testing your knowledge
+                        in a fun and interactive game!
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="card" onclick="location.href='aboutuspage'">
-        <div class="card-header ch9">
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="text-align: center;">About Us
-          </div>
-          <br>
-          <div class="card-desc"> We at Anova Consulting are proud to have launched our cybersecurity education and awareness website “Cybershield”. Take a look at our very informative resources, email breach checker, news page and top it off by testing your knowledge in a fun and interactive game!
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>

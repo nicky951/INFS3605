@@ -1,32 +1,29 @@
 <!-- templates/registration/login.html -->
 
 {% load static %}
-<link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
 <header id="login-iq06" class="login-header-banner">
-  <div id="login-idya" class="login-container-width">
-    <div class="login-logo-container">
-      <div>
+    <div id="login-idya" class="login-container-width">
+        <div class="login-logo-container">
+            <div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
         <br>
         <br>
-      </div>
-    </div>
-    <div class="clearfix">
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-      <body style="text-align: center;">
-      {% block content %}
-      <div id="login-i84nk" class="login-lead-title">Login
-      </div>
-        <form method="post" style="margin: 0 auto; color: #41257F;">
-        {% csrf_token %}
-        {{ form.as_p }}
-          <button type="submit" class="login-lead-btn" id="login-iiwik">Login</button>
-      </form>
-      {% endblock %}
-      </body> 
+        <br>
+        <body style="text-align: center;">
+            {% block content %}
+            <div id="login-i84nk" class="login-lead-title">Login
+            </div>
+            <form method="post" style="margin: 0 auto; color: #41257F;">
+                {% csrf_token %} {{ form.as_p }}
+                <button type="submit" class="login-lead-btn" id="login-iiwik">Login</button>
+            </form>
+            {% endblock %}
+        </body>
 </header>
-
-

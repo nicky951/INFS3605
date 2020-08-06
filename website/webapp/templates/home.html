@@ -1,228 +1,228 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href= "{% static 'css/styles.css' %}">
 <header class="header-banner" id="iin1" style="background-color: #ffffff;">
-    <div class="container-width" id="ifju">
+   <div class="container-width" id="ifju">
       <div class="logo-container" id="io2t" onclick="location.href='/secinfohome/aboutuspage'">
-        <div class="logo"> Anova Consulting
-        </div>
+         <div class="logo"> Anova Consulting
+         </div>
       </div>
       <nav class="menu">
-        <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
-        </div>
-        <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
-        </div>
-        <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
-        </div>
+         <div class="menu-item" onclick="location.href='/game'">AWARENESS GAME
+         </div>
+         <div class="menu-item" onclick="location.href='/emailchecker'"> BREACH CHECKER
+         </div>
+         <div class="menu-item" onclick="location.href='/secinfohome'">SEC-LIBRARY
+         </div>
       </nav>
       <div class="clearfix">
       </div>
       <div class="lead-title">
       </div>
       <div class="sub-lead-title" style="color: #41257F; font-weight: bold;">
-        Welcome
-        <div style="height: 70px;">
-        </div>
+         Welcome
+         <div style="height: 70px;">
+         </div>
       </div>
       <div>
-        <p class="text">Security in your own hands</p>
+         <p class="text">Security in your own hands</p>
       </div>
-    </div>
-  </header>
-  <section class="flex-sect">
-    <div class="container-width">
+   </div>
+</header>
+<section class="flex-sect">
+   <div class="container-width">
       <div class="flex-title" id="iqau8">Top Cyber Security News
       </div>
       <div class="flex-desc">Your latest Cyber Security updates powered by the New York Times
       </div>
       <div class="cards">
-        <div class="card" onclick="location.href='{{cleansed_document_list.0.web_url}}'">
-          <div class="card-header" style="background-image: url({{cleansed_document_list.0.image}});"> 
-          </div>
-          <div class="card-body"> 
-            <div class="card-title">{{ cleansed_document_list.0.main }}
+         <div class="card" onclick="location.href='{{cleansed_document_list.0.web_url}}'">
+            <div class="card-header" style="background-image: url({{cleansed_document_list.0.image}});"> 
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.0.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.0.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.0.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="card" onclick="location.href='{{cleansed_document_list.1.web_url}}'">
-          <div class="card-header ch2" style="background-image: url({{cleansed_document_list.1.image}});">
-          </div>
-          <div class="card-body">
-            <div class="card-title">{{ cleansed_document_list.1.main }}
+         </div>
+         <div class="card" onclick="location.href='{{cleansed_document_list.1.web_url}}'">
+            <div class="card-header ch2" style="background-image: url({{cleansed_document_list.1.image}});">
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.1.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.1.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.1.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="card" onclick="location.href='{{cleansed_document_list.2.web_url}}'">
-          <div class="card-header ch3" style="background-image: url({{cleansed_document_list.2.image}});">
-          </div>
-          <div class="card-body">
-            <div class="card-title">{{ cleansed_document_list.2.main }}
+         </div>
+         <div class="card" onclick="location.href='{{cleansed_document_list.2.web_url}}'">
+            <div class="card-header ch3" style="background-image: url({{cleansed_document_list.2.image}});">
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.2.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.2.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.2.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="card" onclick="location.href='{{cleansed_document_list.3.web_url}}'">
-          <div class="card-header ch4" style="background-image: url({{cleansed_document_list.3.image}});">
-          </div>
-          <div class="card-body">
-            <div class="card-title">{{ cleansed_document_list.3.main }}
+         </div>
+         <div class="card" onclick="location.href='{{cleansed_document_list.3.web_url}}'">
+            <div class="card-header ch4" style="background-image: url({{cleansed_document_list.3.image}});">
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.3.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.3.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.3.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="card" onclick="location.href='{{cleansed_document_list.4.web_url}}'">
-          <div class="card-header ch5" style="background-image: url({{cleansed_document_list.4.image}});">
-          </div>
-          <div class="card-body">
-            <div class="card-title">{{ cleansed_document_list.4.main }}
+         </div>
+         <div class="card" onclick="location.href='{{cleansed_document_list.4.web_url}}'">
+            <div class="card-header ch5" style="background-image: url({{cleansed_document_list.4.image}});">
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.4.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.4.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.4.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="card" onclick="location.href='{{cleansed_document_list.5.web_url}}'">
-          <div class="card-header ch6" style="background-image: url({{cleansed_document_list.5.image}});">
-          </div>
-          <div class="card-body">
-            <div class="card-title">{{ cleansed_document_list.5.main }}
+         </div>
+         <div class="card" onclick="location.href='{{cleansed_document_list.5.web_url}}'">
+            <div class="card-header ch6" style="background-image: url({{cleansed_document_list.5.image}});">
             </div>
-            <br>
-            <div class="card-desc">{{ cleansed_document_list.5.abstract }}
+            <div class="card-body">
+               <div class="card-title">{{ cleansed_document_list.5.main }}
+               </div>
+               <br>
+               <div class="card-desc">{{ cleansed_document_list.5.abstract }}
+               </div>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-  </section>
-  <section class="bdg-sect">
-    <div class="container-width">
+   </div>
+</section>
+<section class="bdg-sect">
+   <div class="container-width">
       <h1 class="bdg-title">The Team
       </h1>
       <div class="badges">
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Amit.jpeg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Amit Gopichand
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">Product Owner
+            <img src="{% static 'webapp/static/Amit.jpeg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Amit Gopichand
+               </div>
+               <div class="badge-role">Product Owner
+               </div>
+               <div class="badge-desc">4th Year Information Systems Student <br> Commerce/Information Systems <br> Fact: Volleyball enthusiast
+               </div>
             </div>
-            <div class="badge-desc">4th Year Information Systems Student <br> Commerce/Information Systems <br> Fact: Volleyball enthusiast
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Nick.jpg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Nicholas Liang
+         </div>
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">Senior Engineer
+            <img src="{% static 'webapp/static/Nick.jpg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Nicholas Liang
+               </div>
+               <div class="badge-role">Senior Engineer
+               </div>
+               <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Has had 5 concussions
+               </div>
             </div>
-            <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Has had 5 concussions
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Anu.jpeg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Anuraag Dasari
+         </div>
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">Business Analyst
+            <img src="{% static 'webapp/static/Anu.jpeg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Anuraag Dasari
+               </div>
+               <div class="badge-role">Business Analyst
+               </div>
+               <div class="badge-desc">4th Year Information Systems Student <br> Commerce/Information Systems <br> Fact: Has a pet sheep
+               </div>
             </div>
-            <div class="badge-desc">4th Year Information Systems Student <br> Commerce/Information Systems <br> Fact: Has a pet sheep
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Charlotte.jpg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Charlotte Kwong
+         </div>
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">Scrum Master
+            <img src="{% static 'webapp/static/Charlotte.jpg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Charlotte Kwong
+               </div>
+               <div class="badge-role">Scrum Master
+               </div>
+               <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Can do 8 consecutive backflips
+               </div>
             </div>
-            <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Can do 8 consecutive backflips
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Tony.jpg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Tony Nguyen
+         </div>
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">Front Developer
+            <img src="{% static 'webapp/static/Tony.jpg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Tony Nguyen
+               </div>
+               <div class="badge-role">Front Developer
+               </div>
+               <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Has a fighting fish named Superman
+               </div>
             </div>
-            <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Has a fighting fish named Superman
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
-        <div class="badge">
-          <div class="badge-header">
-          </div>
-          <img src="{% static 'webapp/static/Mikayla.jpg' %}" class="badge-avatar"/>
-          <div class="badge-body">
-            <div class="badge-name">Mikayla McEwan
+         </div>
+         <div class="badge">
+            <div class="badge-header">
             </div>
-            <div class="badge-role">UX/UI Designer
+            <img src="{% static 'webapp/static/Mikayla.jpg' %}" class="badge-avatar"/>
+            <div class="badge-body">
+               <div class="badge-name">Mikayla McEwan
+               </div>
+               <div class="badge-role">UX/UI Designer
+               </div>
+               <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Black belt in taekwondo
+               </div>
             </div>
-            <div class="badge-desc">3rd Year Information Systems Student <br> Information Systems <br> Fact: Black belt in taekwondo
+            <div class="badge-foot">
+               <span class="badge-link">f</span>
+               <span class="badge-link">t</span>
+               <span class="badge-link">ln</span>
             </div>
-          </div>
-          <div class="badge-foot">
-            <span class="badge-link">f</span>
-            <span class="badge-link">t</span>
-            <span class="badge-link">ln</span>
-          </div>
-        </div>
+         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer-under">
-    <div class="container-width" >
+   </div>
+</section>
+<footer class="footer-under">
+   <div class="container-width" >
       <div class="footer-container">
       </div>
-    </div>
-  </footer>
+   </div>
+</footer>
