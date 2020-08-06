@@ -25,7 +25,7 @@ To run the website locally please follow these instructions:
 The website currently uses the HaveIbeenPwned API to pull data for breached emails. 
 As this is a paid API, the API key will be valid until: 4TH SEPTEMBER 2020. 
 
-If you require the the email feature past this date, please contact nicholasliang25@gmail.com for further details. 
+If you require the the email feature past this date, please contact nicholasliang325@gmail.com for further details. 
 
 The design of our website is originally created using the GrapeJS tool. For further information please see:
 https://grapesjs.com/
